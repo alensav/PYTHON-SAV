@@ -1,6 +1,6 @@
-5import math
+import math
 a=input('Введите число а=')
 print('a в степени 5 =', int(a)**5)
 print()
 print('Kommit-21-02')
-print('kommit ot ipad _'5)
+print('kommit ot ipad _5')
