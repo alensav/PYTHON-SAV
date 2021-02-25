@@ -16,6 +16,9 @@ h2 {
 
 p {
     font-size: 1.0em;
+    display: block;
+    margin-bottom: 20px;
+    text-indent: 25px;
 }
 
 ul.navbar {
