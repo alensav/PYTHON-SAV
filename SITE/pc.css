@@ -25,12 +25,12 @@ header div {
 }
 
 #header_2 {
-    right: calc(2*100% / 3) - 100px;
+    right: calc((2*100% / 3) - 100px);
     top: 10px;
 }
 
 #header_3 {
-    right: calc(2*100% / 3) / 2 - 50px;
+    right: calc((2*100% / 3) / 2 - 50px);
     top: 20px;
 }
 
@@ -100,4 +100,47 @@ nav a:active,
 nav:hover {
     color: #680148;
     text-decoration: none;
+}
+
+p,
+div,
+pre,
+li,
+th,
+td {
+    font-size: 10pt;
+}
+
+h6 {
+    font-size: 12pt;
+}
+
+h5 {
+    font-size: 14pt;
+}
+
+h4 {
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+h1 {
+    font-size: 22pt;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    text-decoration: underline;
 }

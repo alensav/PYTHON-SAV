@@ -32,3 +32,67 @@ header {
 header h1 {
     margin: 0px;
 }
+
+section {
+    padding: 5px;
+    overflow: auto;
+}
+
+section {
+    float: right;
+    width: calc(100vw - 270px -10px);
+    height: calc(100vh - 60px - 30px - 10px);
+}
+
+section {
+    counter-reset: couter-h2 counter-h3 counter-h4 counter-h5 counter-h6;
+}
+
+section h2:before {
+    counter-increment: counter-h2;
+    counter-reset: counter-h3;
+    content: counter (counter-h2) ". ";
+}
+
+section h3:before {
+    counter-increment: counter-h3;
+    counter-reset: counter-h4;
+    content: counter (counter-h2) "." counter (counter-h3) ". ";
+}
+
+section h4:before {
+    counter-increment: counter-h4;
+    counter-reset: counter-h5;
+    content: counter (counter-h2) "." counter (counter-h3) "." counter (counter-h4) ". ";
+}
+
+section h5:before {
+    counter-increment: counter-h5;
+    counter-reset: counter-h6;
+    content: counter (counter-h2) "." counter (counter-h3) "." counter (counter-h4) "." counter (counter-h5) ". ";
+}
+
+section h6:before {
+    counter-increment: counter-h6;
+    content: counter (counter-h2) "." counter (counter-h3) "." counter (counter-h4) "." counter (counter-h5) ". "counter (counter-h6) ". ";
+}
+
+div.media {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+div.media img,
+div.media audio,
+div.media video {
+    max-width: calc(100% - 40px);
+    max-height: 300px;
+}
+
+div.media~div.sign {
+    font-style: italic;
+    text-align: center;
+}
+
+
+}
