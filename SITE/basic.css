@@ -97,7 +97,7 @@ div.media~div.sign {
 form {
     display: block;
     padding: 5px;
-    border: 1px solid #e0eff1
+    border: 1px solid #e0eff1;
 }
 
 form .label {
@@ -112,7 +112,7 @@ input,
 textarea,
 select {
     border: 4px double #7db4b5;
-    transition: border-color 1s
+    transition: border-color 1s;
 }
 
 textarea {
@@ -142,10 +142,39 @@ input [type=reset] {
     background-color: #7db4b5;
     min-width: 60px;
     border: 1px solid #7db4b5;
-    transition: color 1s, border-color 1s;
+    transition: color 1s, background-color 1s, border-color 1s;
 }
 
 input [type=submit]:focus,
 input [type=button]:focus,
 input [type=reset]:focus,
 input [type=submit]:hover,
+input [typebutton]:hover,
+input [type=reset]:hover {
+    color: #ffffff;
+    background-color: #680148;
+    border: 1px solid #680148;
+    transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+}
+
+input,
+textarea,
+select {
+    font-size: 10pt;
+}
+
+input [type=submit],
+input [type=button],
+input [type=reset] {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #e0eff1;
+}
+
+footer p {
+    font-style: italic;
+    text-align: right;
+    margin: 0px;
+}
