@@ -8,7 +8,6 @@ Window.addEvntListener("load", function() {
             oMark.innerHTML = "-";
             oSB.className = ""
             oSB.style.height = oSB.fullHeight + "px";
-
         } else {
             oMark.innerHTML = "+";
             oSB.className = "condensed"
