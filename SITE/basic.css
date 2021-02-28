@@ -178,3 +178,51 @@ footer p {
     text-align: right;
     margin: 0px;
 }
+
+.spoiler {
+    margin-top: 20px;
+    border: 1px solid #7db4b5;
+}
+
+.spoiler h6 {
+    background-color: #7db4b5;
+    margin: 0px;
+    padding: 2px 5px;
+}
+
+.spoiler h6::before {
+    counter-increment: none;
+    content: none;
+}
+
+.spoiler h6 {
+    font-family: monospace;
+}
+
+.spoiler h6 a:link,
+spoiler h6 a:visited,
+.spoiler h6 a:active,
+.spoiler h6 a:hover {
+    text-decoration: none;
+}
+
+.spiler h6 a:link,
+.spoiler a:visited {
+    color: #000000;
+    transition: color 0.5s;
+}
+
+.spoiler>div {
+    padding: 10px;
+    overflow: hidden;
+    transition: height 0.5s, padding 0.5s;
+}
+
+.spoiler>div *:first-child {
+    margin-top: 0px;
+}
+
+>.spoiler>div.condensed {
+    padding: 0px 10px;
+    transition: height 0.5s, padding 0.5s;
+}

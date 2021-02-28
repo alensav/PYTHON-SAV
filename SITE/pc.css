@@ -154,3 +154,9 @@ footer {
 footer p {
     font-size: 10pt;
 }
+
+.spoiler h6 a:active,
+.spoiler h6 a:hover {
+    color: #ffffff;
+    transition: color 0.5s;
+}
