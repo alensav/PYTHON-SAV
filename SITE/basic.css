@@ -222,7 +222,87 @@ spoiler h6 a:visited,
     margin-top: 0px;
 }
 
->.spoiler>div.condensed {
+.spoiler>div.condensed {
     padding: 0px 10px;
     transition: height 0.5s, padding 0.5s;
+}
+
+.lightbox aslink,
+.lightbox a:visited,
+.lightbox a:active,
+.lightbox a:hoveг {
+    color: t680148;
+    text-decoration: none;
+}
+
+•lightbox a span.text {
+    font-size: smaller;
+}
+
+#lightbox cover {
+    background-color: #cccccc;
+    opacity: 0.0;
+    position: fixed;
+    left: Opx;
+    top: Opx;
+    right: Opx;
+    bottom: Opx;
+    visibility: hidden;
+    cursor: pointer;
+    transition: opacity 0.5s
+}
+
+#lightbox_window {
+    background-color: ttffffff;
+    padding: 20px;
+    border: 3px solid #000000;
+    border-radius: 1Opx;
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0.0;
+    visibility: hidden;
+    transition: opacity 0.5s
+}
+
+.lightbox_window.active {
+    opacity: 1.0;
+    visibility: visible;
+    transition: opacity 0.5s
+}
+
+.lightbox_window table {
+    width: 100%;
+    height: 100%;
+}
+
+.lightbox_window table td {
+    text-align: center;
+}
+
+.lightbox_window table td img {
+    max-width: calc(100vw - 140px);
+    max-height: calc(100vh - 140px);
+}
+
+.lightbox close {
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.lightbox_close a:link,
+#lightbox_close asvisited,
+#lightbox close a:active,
+#lightbox close a:hover {
+    text-decoration: none;
+}
+
+#lightbox_close a:link,
+#lightbox close a:visited {
+    color: #680148;
 }
