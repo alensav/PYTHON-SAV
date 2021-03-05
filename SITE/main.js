@@ -65,3 +65,14 @@ function lightboxCloseClick() {
     ell.className = "";
     el2.className = "";
 }
+//Задание размеров видео
+function videoLoadedMetadata(evt) {
+    var e1 = evt.target;
+    e1.width = e1.videoWidth;
+    e1.height = e1.videHeight;
+}
+var arrVideos = oSection.getElementsByTagName("video");
+for (var i = 0; i < arrVideos.length; i++) {
+    e1 = arrVideos[i];
+    e1.addEvntListener("loadedmetadata", videoLoadedMetadata, false);
+}
