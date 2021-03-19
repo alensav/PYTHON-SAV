@@ -1,0 +1,45 @@
+div {
+    height: 200px;
+    width: 200px;
+}
+
+.lg {
+    background: linear-gradient(180deg, rgb(226, 119, 119), rgb(128, 122, 122));
+}
+
+.lg_2 {
+    background: linear-gradient(45deg, #c00, #0c0 30%, rgb(220, 231, 62));
+}
+
+.lg_3 {
+    background: linear-gradient(270deg, #c00, rgb(212, 226, 15));
+}
+
+.rg {
+    background: radial-gradient(at right top, #c00, #000);
+    border-radius: 300px;
+}
+
+a {
+    color: #00c;
+    font-size: 200%;
+    transition-property: color;
+    transition-duration: 0.8s;
+}
+
+.block {
+    background-color: #cc0;
+    height: 300px;
+    width: 30%;
+    transition-duration: 0.5s;
+}
+
+.block:hover {
+    background-color: #330;
+    height: 300px;
+    width: 100%;
+}
+
+a:hover {
+    color: #c00
+}
