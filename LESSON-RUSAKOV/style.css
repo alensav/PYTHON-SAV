@@ -1,3 +1,4 @@
+@import url("color.css");
 div {
     height: 200px;
     width: 200px;
@@ -76,4 +77,53 @@ a:hover {
     transform: rotate(-50deg);
     transform: scale(2, 4);
     transform-origin: bottom right;
+}
+
+p {
+    font-size: 150%;
+    color: brown;
+}
+
+ul {
+    font-size: 200%;
+    list-style: none;
+}
+
+li a span {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+li:nth-child(1) a span {
+    color: #000;
+    background: url("/LESSON-RUSAKOV/icons1/w257h2571389895762kombi.png") no-repeat;
+    background-position: 0 -150px;
+}
+
+li:nth-child(2) a span {
+    color: #000;
+    background: url("/LESSON-RUSAKOV/icons1/w257h2571389895762Lamborghini.png.png") no-repeat;
+    background-position: 0 -150px;
+}
+
+li:nth-child(3) a span {
+    color: #000;
+    background: url("/LESSON-RUSAKOV/icons1/w257h2571389895762FordMustang.png") no-repeat;
+    background-position: 0 -150px;
+}
+
+li:nth-child(1) a {
+    background-position: 0 0;
+}
+
+li:nth-child(2) a {
+    background-position: 0 0;
+}
+
+li:nth-child(3) a {
+    background-position: 0 0;
+}
+
+
 }
