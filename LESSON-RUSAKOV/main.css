@@ -1,0 +1,26 @@
+@import url("color.css");
+p {
+    font-size: 150%;
+}
+
+
+/* Применение новых шрифтов */
+
+@font-face {
+    font-family: Badscript;
+    src: url("./font/BadScript-Regular.woff") format("woff");
+}
+
+body {
+    font-family: Badscript;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+}
