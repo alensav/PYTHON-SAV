@@ -27,11 +27,18 @@ input [type="text"] {
     width: 400px;
 }
 
+
+/*Изменение цвета рамки при ее выборе(в фокусе)*/
+
 input [type="submit"] {
     color: #0099dd;
     cursor: pointer;
     height: 50px;
     width: 300px;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #c00;
 }
 
 form>p {
@@ -44,4 +51,36 @@ ul li:first-child {
 
 ul li:last-child {
     color: #0c0;
+}
+
+table {
+    background: #e4eba9;
+    border: 2px solid #000;
+    text-align: center;
+    width: 30%;
+}
+
+td {
+    border: 1px solid #000
+}
+
+td:nth-child(2n) {
+    color: #00c;
+}
+
+td:nth-child(2n+1) {
+    color: #a00;
+}
+
+a {
+    color: #c00;
+    text-decoration: none;
+}
+
+
+/*Изменение цвета и черта подчеркивания*/
+
+a:hover {
+    color: #00c;
+    text-decoration: underline;
 }
