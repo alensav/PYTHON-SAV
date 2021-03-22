@@ -24,3 +24,20 @@ p {
     font-size: 250%;
     font-weight: bold;
 }
+
+a {
+    text-align: center;
+    color: #c00;
+    font-size: 200%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/*Шрифт с тенью */
+
+.shadow {
+    text-align: justify;
+    text-shadow: 7px 5px 6px rgb(64, 192, 71);
+}

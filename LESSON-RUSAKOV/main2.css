@@ -1,0 +1,47 @@
+body {
+    font-size: 200%;
+}
+
+p {
+    color: rgb(81, 16, 143);
+}
+
+.red {
+    color: #f00;
+}
+
+#title {
+    color: #fa3900;
+    text-align: center;
+}
+
+
+/*Контексный селектор внутри тэга и толькоююю*/
+
+p span {
+    color: #00cc00;
+}
+
+input [type="text"] {
+    height: 40px;
+    width: 400px;
+}
+
+input [type="submit"] {
+    color: #0099dd;
+    cursor: pointer;
+    height: 50px;
+    width: 300px;
+}
+
+form>p {
+    font-size: 200%;
+}
+
+ul li:first-child {
+    color: #c00;
+}
+
+ul li:last-child {
+    color: #0c0;
+}

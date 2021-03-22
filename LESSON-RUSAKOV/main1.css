@@ -1,0 +1,42 @@
+p {
+    margin: 0;
+}
+
+.mm {
+    font-size: 20mm;
+}
+
+.in {
+    font-size: 2in;
+}
+
+.pt {
+    font-size: 12pt;
+}
+
+.cm {
+    font-size: 2cm;
+}
+
+
+/*Относительные измерения*/
+
+.px {
+    font-size: 20px;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.percent {
+    font-size: 200%;
+}
+
+.vw {
+    font-size: 2vw;
+}
+
+.vh {
+    font-size: 2vh;
+}
