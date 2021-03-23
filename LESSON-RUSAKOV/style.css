@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(243, 243, 174)
+}
+
 @import url("color.css");
 div {
     height: 200px;
@@ -135,4 +139,16 @@ li:nth-child(2) a:hover span {
 
 li:nth-child(3) a:hover span {
     background-position: -150px -75px;
+}
+
+a:link {
+    color: rgb(11, 8, 165);
+}
+
+a:visited {
+    color: rgb(191, 17, 235)
+}
+
+a:hover {
+    color: rgb(15, 99, 15)
 }

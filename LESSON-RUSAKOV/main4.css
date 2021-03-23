@@ -1,0 +1,58 @@
+#container {
+    border: 2px solid #000;
+    background-color: rgb(240, 223, 203);
+    margin: 20px auto;
+    width: 500px;
+}
+
+p {
+    border: 1px solid #c00;
+    margin: 0;
+}
+
+a {
+    border: 1px solid #0c0;
+}
+
+p:first-child {
+    margin: 10px;
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 4px;
+    padding-top: 5px;
+    padding-bottom: 9px;
+}
+
+body>p {
+    border: 2px solid #c00;
+    margin: 20px 30px
+}
+
+.div_1 {
+    border: 1px solid #000;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px 20px rgb(174, 223, 39);
+    /*Тень*/
+    height: 400px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.div_2 {
+    border: 1px solid #000;
+    height: 200px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+/*скроллинг*/
+
+.over {
+    border: 1px solid #000;
+    font-size: 150%;
+    height: 90px;
+    margin: 20px 0;
+    overflow: auto;
+    width: 200px;
+}
