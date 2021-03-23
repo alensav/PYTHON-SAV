@@ -1,0 +1,40 @@
+    body {
+        background: url("./font/textile-2918844_960_720.jpg");
+        margin: 0;
+        padding: 0;
+    }
+    
+    .red {
+        background-color: #c00;
+        height: 400px;
+        margin: 40px;
+        padding: 40px;
+        width: 400px;
+    }
+    
+    .red:hover {
+        background-image: url("./icons1/icons_1.png");
+    }
+    
+    .image_blue {
+        border: 5px solid #000;
+        background: url("./font/textile-2918844_960_720.jpg") no-repeat #00c;
+        height: 400px;
+        width: 400px;
+    }
+    
+    .bg_sizen {
+        border: 20px solid #000;
+        background: url("./icons1/icons_1.png") no-repeat #00c;
+        background-size: 80%;
+        height: 400px;
+        width: 400px;
+    }
+    
+    .bg_mult {
+        background: url("./fire.JPG") no-repeat top left, url("./font/water-1330252__340.webp") no-repeat bottom right;
+        border: 5px solid #cc0;
+        background-size: 80%;
+        height: 700px;
+        width: 900px;
+    }

@@ -1,0 +1,2 @@
+D:\CPPProjects\Comments\Debug\Comments.exe
+D:\CPPProjects\Comments\Debug\Comments.pdb
