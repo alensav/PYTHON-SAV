@@ -1,0 +1,39 @@
+body {
+    padding-left: 200px;
+}
+
+.block_1 {
+    background-color: rgb(214, 231, 149);
+    height: 500px;
+    position: relative;
+    left: 50px;
+    right: 0;
+    bottom: 0%;
+    width: 500px;
+    z-index: 10;
+    top: 10px;
+}
+
+.block_1:hover {
+    z-index: 200;
+}
+
+.block_2 {
+    background-color: rgb(230, 210, 34);
+    height: 500px;
+    position: absolute;
+    width: 500px;
+    left: 100px;
+    top: 300px;
+    z-index: 20;
+}
+
+.top {
+    background-color: rgb(230, 15, 15);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    left: -100px;
+    z-index: 100;
+}
