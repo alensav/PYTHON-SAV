@@ -1,0 +1,17 @@
+div {
+    height: 400px;
+    width: 400px;
+}
+
+.lg {
+    background: linear-gradient(135deg, #c00, #000);
+}
+
+.lg2 {
+    background: linear-gradient(135deg, #c00, #0c0 30%, #000);
+}
+
+.rg {
+    background: radial-gradient(at center center, #000, #c00);
+    border-radius: 300px;
+}
