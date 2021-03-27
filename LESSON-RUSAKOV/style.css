@@ -101,7 +101,7 @@ li a span {
 
 li:nth-child(1) a span {
     color: #000;
-    background: url("/LESSON-RUSAKOV/icons1/w257h2571389895762kombi.png") no-repeat;
+    background: url("./icons1/w257h2571389895762kombi.png") no-repeat;
     background-position: 0 -150px;
 }
 
