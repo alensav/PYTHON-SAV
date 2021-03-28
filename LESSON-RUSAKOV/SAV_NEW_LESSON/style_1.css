@@ -2,31 +2,32 @@
     border: 2px solid #C00;
     position: fixed;
     top: 0;
-    background: rgb(213, 229, 186);
+    background: rgb(122, 243, 148);
     height: 100px;
     width: 100%;
 }
 
 .d2 {
     border: 2px solid #C00;
-    position: relative;
-    background: rgb(213, 229, 186);
+    position: absolute;
+    background: rgb(241, 232, 143);
     float: left;
-    margin-top: 30px;
-    height: 550px;
-    width: 200px;
+    left: 5px;
+    margin-top: 35px;
+    height: 85%;
+    width: 10%;
 }
 
 .d3 {
     border: 2px solid #C00;
     float: left;
     position: absolute;
-    background: rgb(240, 231, 153);
-    /*left: 205px;*/
+    background: rgb(228, 83, 83);
+    /*left: 215px;*/
     margin-top: 35px;
-    margin-left: 10px;
-    height: 550px;
-    width: 1000px;
+    margin-left: 10%;
+    height: 85%;
+    width: 30%;
 }
 
 .d4 {
@@ -34,19 +35,22 @@
     float: left;
     position: absolute;
     background: rgb(226, 182, 188);
+    /*left: 215px;*/
     margin-top: 35px;
-    margin-left: -500px;
-    height: 550px;
-    width: 1000px;
+    margin-left: 40%;
+    height: 85%;
+    width: 30%;
 }
 
 .d5 {
     border: 2px solid #C00;
+    /*left: 65% - 210px;*/
+    /*padding-left: 10px;*/
     float: left;
     position: absolute;
     background: rgb(85, 95, 235);
-    margin-top: 50px;
-    margin-left: 10px;
-    height: 550px;
-    width: 1000px;
+    margin-top: 35px;
+    margin-left: 70%;
+    height: 85%;
+    width: 30%;
 }
