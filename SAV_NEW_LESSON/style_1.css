@@ -16,9 +16,11 @@ div h1 {
 }
 
 .d2 {
+    font-size: 200%;
     border: 2px solid #C00;
     position: absolute;
-    background: rgb(241, 232, 143);
+    /* background: rgb(241, 232, 143);*/
+    background: linear-gradient(180deg, rgb(103, 109, 18), rgb(240, 225, 185));
     float: left;
     left: 5px;
     margin-top: 65px;
@@ -35,15 +37,18 @@ div h1 {
     left: 5px;
     margin-top: 65px;
     height: 85%;
-    width: 400px;
+    width: 50%;
     z-index: 10;
 }
 
 .d3 {
+    font-size: 150%;
+    color: rgba(4, 66, 14, 0.918);
     border: 2px solid #C00;
     float: left;
     position: absolute;
-    background: rgb(228, 83, 83);
+    /*background: rgb(228, 83, 83);*/
+    background: linear-gradient(135deg, rgb(230, 127, 149), rgb(240, 225, 185));
     /*left: 215px;*/
     margin-top: 65px;
     margin-left: 10%;
@@ -72,9 +77,14 @@ div h1 {
     float: left;
     position: absolute;
     background: rgb(85, 95, 235);
+    background: linear-gradient(180deg, rgb(85, 95, 235), rgb(240, 225, 185));
     margin-top: 65px;
     margin-left: 70%;
     height: 85%;
     width: 30%;
     z-index: 1;
+}
+
+.shadow {
+    text-shadow: 5px 4px #ffae;
 }
