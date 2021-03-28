@@ -1,3 +1,11 @@
+div h1 {
+    letter-spacing: 4px;
+    margin: 0;
+    color: #C00;
+    text-align: center;
+    font-size: 300%;
+}
+
 .d1 {
     border: 2px solid #C00;
     position: fixed;
@@ -13,9 +21,20 @@
     background: rgb(241, 232, 143);
     float: left;
     left: 5px;
-    margin-top: 35px;
+    margin-top: 65px;
     height: 85%;
     width: 10%;
+}
+
+.d2:hover {
+    border: 2px solid #C00;
+    position: absolute;
+    background: rgb(235, 230, 194);
+    float: left;
+    left: 5px;
+    margin-top: 65px;
+    height: 85%;
+    width: 40%;
 }
 
 .d3 {
@@ -24,7 +43,7 @@
     position: absolute;
     background: rgb(228, 83, 83);
     /*left: 215px;*/
-    margin-top: 35px;
+    margin-top: 65px;
     margin-left: 10%;
     height: 85%;
     width: 30%;
@@ -36,7 +55,7 @@
     position: absolute;
     background: rgb(226, 182, 188);
     /*left: 215px;*/
-    margin-top: 35px;
+    margin-top: 65px;
     margin-left: 40%;
     height: 85%;
     width: 30%;
@@ -49,7 +68,7 @@
     float: left;
     position: absolute;
     background: rgb(85, 95, 235);
-    margin-top: 35px;
+    margin-top: 65px;
     margin-left: 70%;
     height: 85%;
     width: 30%;
