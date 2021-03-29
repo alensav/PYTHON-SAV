@@ -57,6 +57,22 @@ div h1 {
     z-index: 3;
 }
 
+.d3:hover {
+    font-size: 150%;
+    color: rgba(4, 66, 14, 0.918);
+    border: 2px solid #C00;
+    float: left;
+    position: absolute;
+    /*background: rgb(228, 83, 83);*/
+    background: linear-gradient(135deg, rgb(236, 195, 204), rgb(230, 220, 195));
+    /*left: 215px;*/
+    margin-top: 65px;
+    margin-left: 10%;
+    height: 85%;
+    width: 50%;
+    z-index: 11;
+}
+
 .d4 {
     border: 2px solid #C00;
     float: left;
@@ -67,6 +83,19 @@ div h1 {
     margin-left: 40%;
     height: 85%;
     width: 30%;
+    z-index: 2;
+}
+
+.d4:hover {
+    border: 2px solid #C00;
+    float: left;
+    position: absolute;
+    background: rgb(226, 182, 188);
+    /*left: 215px;*/
+    margin-top: 65px;
+    margin-left: 40%;
+    height: 85%;
+    width: 50%;
     z-index: 2;
 }
 
@@ -85,6 +114,25 @@ div h1 {
     z-index: 1;
 }
 
+.d5:hover {
+    border: 2px solid #C00;
+    /*left: 65% - 210px;*/
+    /*padding-left: 10px;*/
+    float: left;
+    position: absolute;
+    background: rgb(85, 95, 235);
+    background: linear-gradient(180deg, rgb(85, 95, 235), rgb(240, 225, 185));
+    margin-top: 65px;
+    margin-left: 70%;
+    height: 85%;
+    width: 50%;
+    z-index: 10;
+}
+
 .shadow {
     text-shadow: 5px 4px #ffae;
+}
+
+div a {
+    margin-top: 10px;
 }
