@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SAV_LESSON_NEW1</title>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8 />
+        <meta name=" description content="Урок web программирования" />
+    <meta name="keywords" content="web-страница,уроки, html" />
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="main_1.css" type="text/css">
+
+</head>
+
+<body>
+    <div class="d1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼1</div>
+    <div class="d2">2
+    </div>
+    <div class="d3">3
+        <h3>Apache HTTP Server</h3>
+        <br/>Содержание
+        <br/>Apache HTTP Server
+        <br/> Версии Apache в Ubuntu
+        <br/>Хостинг сайтов
+        <br/>Установка
+        <br/>Настройка
+        <br/>Кодировка по умолчанию
+        <br/>Виртуальные хосты
+        <br/> Модули
+        <br/>Настройка HTTPS в Apache
+        <br/>Создание ключа и ssl-сертификата
+        <br/>Настройка Apache
+        <br/>Перенаправление HTTP запросов на HTTPS
+        <br/>Ссылки
+        <br/>Возможные проблемы
+        <br/>Смотрите также
+        <br/>Ссылки
+        <br/>Apache HTTP Server — проект, развиваемый The Apache Software Foundation, в рамках которого разрабатывается кроссплатформенный HTTP сервер с открытым исходным кодом. Входит в состав LAMP и XAMPP.
+        <br/>Версии Apache в Ubuntu
+
+        <br/>Ubuntu
+        <br/>Apache 12.04 LTS (Precise) 2.2 14.04 LTS (Trusty) 2.4 15.10 (Wily) 2.4 16.04 LTS (Xenial) 2.4 Хостинг сайтов Можно реализовать четырьмя способами: по умолчанию в папке /var/www/html. Доступом является http://localhost/ настройки основного
+        хостинга. Например, http://localhost/phpmyadmin в любой папке с помощью модуля виртуальных хостов. Например, http://mysite/ в папке пользователя public_html (модуль userdir). Например, http://localhost/~username
+        <br/>Установка
+        <br/>Для установки Apache выполните в терминале:
+        <br/> sudo apt-get install apache2
+        <br/> Настройка
+        <br/> Для применения изменений в настройках необходимо перезапустить демон Apache:
+        <br/>sudo service apache2 restart
+        <br/>В Ubuntu конечный файл настройки (apache2.conf) расделён на несколько файлов, расположенных в разных поддиректориях. Подробней написано в комментариях файла apache2.conf. /etc/apache2/ |-- apache2.conf | `-- ports.conf |-- mods-enabled |
+        |-- *.load | `-- *.conf |-- conf-enabled | `-- *.conf `-- sites-enabled `-- *.conf
+        <br/>Настройки модулей расположены в директории /etc/apache2/mods-available. Для подключения или отключения модулей (настроек модулей) следует использовать соответствующие команды a2enmod или a2dismod. Пример подключения модуля:
+        <br/> sudo a2enmod
+        <mod-name>
+            <br/>Свои настройки следует сохранять в файлы, расположенные в директории /etc/apache2/conf-available. Для подключения или отключения своих настроек следует использовать соответствующие команды a2enconf или a2disconf. Пример подключения файла
+            со своими настройками:
+            <br/>sudo a2enconf
+            <config-name>
+                <br/> Настройки виртуальных хостов следует сохранять в файлы, расположенные в директории /etc/apache2/sites-available. Для подключения виртуальных хостов следует использовать соответствующие команды a2ensite или a2dissite. Пример подключения
+                виртуального хоста:
+                <br/> sudo a2ensite
+                <site-name>
+                    Кодировка по умолчанию
+                    <br/> Для указания кодировки по умолчанию следует использовать директиву AddDefaultCharset в файле /etc/apache2/conf-available/charset.conf (или раскомментировать соответствующую строку):
+                    <br/> AddDefaultCharset UTF-8
+                    <br/>Виртуальные хосты
+                    <br/>Файлы настроек виртуальных хостов хранятся в /etc/apache2/sites-available/*.conf. По умолчанию в Apache уже настроен один виртуальный хост. Его настройки лежат в файле . Вы можете использовать этот виртуальный хост в качестве
+                    примера.
+                    <br/> Пример настройки виртуального хоста:
+                    <br/>
+                    <VirtualHost *:80>
+                        #Имя хоста ServerName host1.server1 #Корневая папка хоста DocumentRoot /var/www/host1.server1
+                        <Directory /var/www/host1.server1>
+                            #Разрешение на перезапись всех директив при помощи .htaccess AllowOverride All
+                        </Directory>
+                    </VirtualHost>
+                    Назовите файл настройки именем вашего хоста host1.server1.conf и сохраните. После создания файла настроек допишите в /etc/hosts имя вашего хоста: 127.0.0.1 host1.server1 Для включения созданного виртуального хоста используется утилита a2ensite: sudo a2ensite
+                    host1.server1 Отключается хост аналогично утилитой a2dissite: sudo a2dissite host1.server1 Модули mod_userdir Модуль mod_userdir позволяет использовать директории, находящиеся в домашних директориях пользователей для хранения веб страниц.
+                    По умолчанию Apache ищет запрашиваемые страницы в директории ~/public_html mkdir ~/public_html Чтобы включить mod_userdir, выполните: sudo a2enmod userdir и добавьте необходимого пользователя в группу www-data: sudo adduser $USER www-data
+                    после чего перезагрузите Apache: sudo service apache2 restart Страницы будут доступны по адресу http://localhost/~username, где username — имя пользователя. ================================================= Проверить права на папки
+                    и при необходимости. установить Спасибо, разобрался. Выполнил от root: Код: //* Set permissions on all directories to 755. // find . -type d -print -exec chmod 755 {} \; //* Set permissions on all files to 644. // find . -type f -print
+                    -exec chmod 644 {} \; =================================================== Настройка public_html подробно. CGI Если Вы хотите запускать на сервере cgi-скрипты, подключите модуль cgi командой sudo a2enmod cgi По умолчанию cgi-скрипты
+                    размещаются в директории /usr/lib/cgi-bin, но вы можете разместить их где угодно, указав это в настройках своего виртуального хоста, либо глобально для всех хостов в файле /etc/apache2/conf-enabled/serve-cgi-bin.conf. Eсли ваш сервер
+                    работает во внешней сети, то в целях безопасности настоятельно рекомендуется размещать cgi-скрипты вне корневой директории виртуального хоста Настройка HTTPS в Apache Веб-сервер Apache полностью поддерживает работу по HTTPS. Чтобы
+                    активировать поддержку HTTPS на уже установленном Apache, необходимо выполнить следующее. Создание ключа и ssl-сертификата Использование самоподписанных сертификатов хоть и защищает от пассивного прослушивания, тем не менее не гарантирует
+                    клиентам, что сервер является именно тем сервером, который им нужен. Преимуществом самоподписанных сертификатов является их бесплатность. Сертификат, подписанный компанией-сертификатором (Certificate authority), стоит денег. Для создания
+                    ключа и сертификата вводим команду: openssl req -new -x509 -days 30 -keyout server.key -out server.pem На вопрос «Enter PEM pass phrase:» отвечаем паролем, подтверждаем и запоминаем. На все последующие вопросы отвечаем произвольно,
+                    можно просто щелкать по Enter, соглашаясь с предложенными вариантами, только на вопрос «Common Name (eg, YOUR name) []:» отвечаем именем сайта, для которого создаем сертификат, например www.example.com. После ответа на все вопросы
+                    в директории должны появиться два новых файла — server.pem (ключ) и server.crt (сертификат). Чтобы использовать сгенерированный ключ, нужно знать пароль, введённый нами, и Apache будет спрашивать его у нас при загрузке, а к чему нам
+                    лишние вопросы от демонов? :) Поэтому снимаем пароль с ключа: cp server.key{,.orig} openssl rsa -in server.key.orig -out server.key rm server.key.orig Скопируем их в /etc/ssl и назначим файлу ключа права чтения только администратору:
+                    sudo cp server.pem /etc/ssl/certs/ sudo cp server.key /etc/ssl/private/ sudo chmod 0600 /etc/ssl/private/server.key Настройка Apache Для начала необходимо активировать mod_ssl: sudo a2enmod ssl А затем включить настройки HTTPS сайта
+                    по умолчанию: sudo a2ensite default-ssl Теперь необходимо отредактировать файл с настройками HTTPS сайта по умолчанию, указав в нём пути к вашим сертификатам. Сам файл называется /etc/apache2/sites-enabled/default-ssl (или /etc/apache2/sites-enabled/default-ssl.conf).
+                    В этом файле рекомендуется после директивы SSLEngine on добавить строчку SSLProtocol all -SSLv2 чтобы запретить использование устаревшего протокола SSLv2. Дальше вам необходимо отредактировать параметры, ответственные за сертификаты.
+                    # Публичный сертификат сервера SSLCertificateFile /etc/ssl/certs/server.pem # Приватный ключ сервера SSLCertificateKeyFile /etc/ssl/private/server.key Теперь просто перезагрузите Apache: sudo service apache2 restart И если все параметры
+                    указаны верно, ваши сайты станут доступны по HTTPS. Протокол HTTPS работает по 443 порту, поэтому если сервер находится за шлюзом, то необходимо на нём пробросить данный порт. Перенаправление HTTP запросов на HTTPS Если вы хотите запретить
+                    использование HTTP, то самым разумным будет перенаправлять все HTTP запросы к страницам на их HTTPS адрес. Сделаем это с помощью mod_alias. Если он не включён — включаем: sudo a2enmod alias sudo service apache2 restart Затем изменяем
+                    файл /etc/apache2/sites-enabled/000-default, отвечающий за виртуальный хост по умолчанию для HTTP запросов. В этот файл добавляем директиву Redirect / https://example.com/ При этом все настройки директорий можно удалить, поскольку
+                    по HTTP на ваши сайты всё равно будет не попасть. Всё, теперь ещё раз перезапустите Apache и убедитесь, что при заходе по HTTP вы автоматически перенаправляетесь на HTTPS-страницу. Ссылки Источник When not to use mod_rewrite Возможные
+                    проблемы Если при запуске появляется ошибка apache2: Could not determine the server's fully qualified domain name, using 127.0.0.1 for ServerName добавьте в свой файл конфигурации строку ServerName localhost</div>
+    <div class="d4">4</div>
+
+</body>
+
+</html>

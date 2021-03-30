@@ -1,0 +1,59 @@
+div {
+    /*по скроллинг текста за пределами блока*/
+    line-height: 30px;
+    overflow: scroll;
+    word-wrap: break-word;
+}
+
+.d1 {
+    border: 2px solid #C00;
+    position: fixed;
+    top: 0;
+    background: rgb(122, 243, 148);
+    height: 100px;
+    width: 100%;
+}
+
+.d2 {
+    font-size: 200%;
+    border: 2px solid #C00;
+    position: absolute;
+    /* background: rgb(241, 232, 143);*/
+    background: linear-gradient(180deg, rgb(103, 109, 18), rgb(240, 225, 185));
+    float: left;
+    left: 5px;
+    margin-top: 65px;
+    height: 85%;
+    width: 10%;
+    z-index: 4;
+}
+
+.d3 {
+    font-size: 150%;
+    color: rgba(4, 66, 14, 0.918);
+    border: 2px solid #C00;
+    float: left;
+    position: absolute;
+    /*background: rgb(228, 83, 83);*/
+    background: linear-gradient(135deg, rgb(179, 209, 229), rgb(240, 225, 185));
+    /*left: 215px;*/
+    margin-top: 65px;
+    margin-left: 10%;
+    height: 85%;
+    width: 45%;
+    z-index: 3;
+}
+
+.d4 {
+    line-height: 1.5;
+    border: 2px solid #C00;
+    float: left;
+    position: absolute;
+    background: rgb(233, 213, 216);
+    /*left: 215px;*/
+    margin-top: 65px;
+    margin-left: 55%;
+    height: 85%;
+    width: 45%;
+    z-index: 2;
+}

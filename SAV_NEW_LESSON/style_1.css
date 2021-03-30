@@ -1,3 +1,18 @@
+h {
+    text-align: center;
+}
+
+br {
+    text-indent: 30px;
+}
+
+div {
+    /*по скроллинг текста за пределами блока*/
+    line-height: 30px;
+    overflow: scroll;
+    word-wrap: break-word;
+}
+
 div h1 {
     letter-spacing: 4px;
     margin: 0;
@@ -64,7 +79,7 @@ div h1 {
     float: left;
     position: absolute;
     /*background: rgb(228, 83, 83);*/
-    background: linear-gradient(135deg, rgb(236, 195, 204), rgb(230, 220, 195));
+    background: linear-gradient(135deg, rgb(241, 230, 233), rgb(230, 220, 195));
     /*left: 215px;*/
     margin-top: 65px;
     margin-left: 10%;
@@ -87,10 +102,12 @@ div h1 {
 }
 
 .d4:hover {
+    line-height: 2;
+    font-size: 150%;
     border: 2px solid #C00;
     float: left;
     position: absolute;
-    background: rgb(226, 182, 188);
+    background: rgb(234, 240, 210);
     /*left: 215px;*/
     margin-top: 65px;
     margin-left: 40%;
