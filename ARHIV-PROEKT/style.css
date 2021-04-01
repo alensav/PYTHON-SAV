@@ -1,6 +1,14 @@
-﻿p {
+﻿body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    top: 0;
+}
+
+p {
     margin-bottom: 20px;
-text-indent: 1.5em; 
+    text-indent: 1.5em;
 }
 
 .block0 {
@@ -383,7 +391,8 @@ text-indent: 1.5em;
 .rightpic {
     float: left;
     /* Выравнивание по левому краю */
-    margin: 0 0 0 0/* Отступы вокруг фотографии */
+    margin: 0 0 0 0
+    /* Отступы вокруг фотографии */
 }
 
 html,

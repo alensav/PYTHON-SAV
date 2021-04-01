@@ -1,0 +1,101 @@
+body {
+    background-color: #d2f1b8;
+}
+
+.dv0 {
+    border: 1px solid rgb(19, 19, 18);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #97ccb6;
+    z-index: 0;
+}
+
+.dv1-1 {
+    border: 0px solid rgb(19, 19, 18);
+    height: 100px;
+    width: 100%;
+    background-color: #ecaad8;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.dv1 {
+    border: 1px solid rgb(19, 19, 18);
+    height: 100%;
+    width: 5%;
+    background-color: #4de680;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.dv2 {
+    border: 1px solid rgb(19, 19, 18);
+    float: right;
+    height: 100%;
+    width: 95%;
+    background-color: #4de680;
+    position: relative;
+    z-index: 4;
+}
+
+.dv3_2 {
+    top: 0px;
+    border: 1px solid rgb(19, 19, 18);
+    height: 86%;
+    width: 100%;
+    background-color: #e1e977;
+    position: relative;
+    z-index: 5;
+}
+
+.dv3 {
+    border: 1px solid rgb(19, 19, 18);
+    left: 0px;
+    top: 0px;
+    height: 85%;
+    width: 30%;
+    background-color: #f0a896;
+    position: absolute;
+    z-index: 6;
+}
+
+.dv4 {
+    border: 1px solid rgb(19, 19, 18);
+    top: 0px;
+    left: 30%;
+    float: left;
+    height: 85%;
+    width: 35%;
+    background-color: #f0a896;
+    position: relative;
+    z-index: 7;
+}
+
+.dv5 {
+    border: 1px solid rgb(19, 19, 18);
+    top: 0px;
+    /*left: 66%;*/
+    float: left;
+    height: 85%;
+    width: 25%;
+    background-color: #f0a896;
+    /*position: relative;*/
+    margin-right: 1%;
+    z-index: 8;
+}
+
+.dv6 {
+    border: 1px solid rgb(19, 19, 18);
+    top: 95%;
+    height: 5%;
+    width: 100%;
+    background-color: #a19fe4;
+    position: relative;
+    margin-bottom: 0;
+    z-index: 9;
+}
