@@ -106,9 +106,9 @@ body {
 
 .dv3-15-1 {
     border: 1px solid rgb(19, 19, 18);
-    left: 0px;
+    left: 0%;
     top: 0px;
-    height: 49%;
+    height: 50%;
     width: 100%;
     background-color: #c2f1b0;
     position: absolute;
@@ -120,8 +120,8 @@ body {
 .dv3-15-2 {
     border: 1px solid rgb(19, 19, 18);
     left: 0px;
-    top: 0px;
-    height: 49%;
+    top: 50%;
+    height: 50%;
     width: 100%;
     background-color: #96f0a5;
     position: absolute;
@@ -148,10 +148,9 @@ body {
     border: 1px solid rgb(19, 19, 18);
     position: absolute;
     top: 0px;
-    left: 65%;
-    float: left;
+    left: 60%;
     height: 99%;
-    width: 35%;
+    width: 40%;
     background-color: #f0a896;
     /*position: relative;*/
     /* margin-right: 1%;*/
