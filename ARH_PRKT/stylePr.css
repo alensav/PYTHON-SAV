@@ -82,7 +82,7 @@ body {
     border: 1px solid rgb(19, 19, 18);
     left: 0px;
     top: 0px;
-    height: 99%;
+    height: 100%;
     width: 100%;
     background-color: #f0a896;
     position: absolute;
@@ -105,6 +105,46 @@ body {
 }
 
 .dv3-15-1 {
+    border: 1px solid rgb(19, 19, 18);
+    left: 0px;
+    top: 0px;
+    height: 49%;
+    width: 100%;
+    background-color: #c2f1b0;
+    position: absolute;
+    z-index: 6;
+    font-size: 20;
+    /* display: inline-block;*/
+}
+
+.dv3-15-1-1 {
+    border: 1px solid rgb(19, 19, 18);
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 50%;
+    background-color: #b0e4f1;
+    position: absolute;
+    z-index: 6;
+    font-size: 24;
+    /* display: inline-block;*/
+}
+
+.dv3-15-1-2 {
+    border: 1px solid rgb(180, 241, 241);
+    left: 50%;
+    float: left;
+    top: 0px;
+    height: 100%;
+    width: 50%;
+    background-color: #c2f1b0;
+    position: absolute;
+    z-index: 6;
+    font-size: 25;
+    /* display: inline-block;*/
+}
+
+.dv3-15-1-2 {
     border: 1px solid rgb(19, 19, 18);
     left: 0px;
     top: 0px;
