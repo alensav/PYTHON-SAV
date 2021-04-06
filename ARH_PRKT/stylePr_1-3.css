@@ -62,7 +62,7 @@ body {
     z-index: 5;
     margin: 0 auto;
     box-sizing: border-box;
-    font-size: 0;
+    /*font-size: 0;*/
 }
 
 .dv3 {
@@ -124,7 +124,7 @@ body {
     height: 50%;
     width: 100%;
     background-color: #96f0a5;
-    position: absolute;
+    position: relative;
     z-index: 6;
     font-size: 20;
     /* display: inline-block;*/
@@ -157,6 +157,11 @@ body {
     z-index: 8;
     font-size: 14;
     /*display: inline-block;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv6 {
