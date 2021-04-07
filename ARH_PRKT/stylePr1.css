@@ -11,8 +11,8 @@ body {
 }
 
 .button {
-    width: 250px;
-    height: 40px;
+    width: 140px;
+    height: 25px;
     border: 3px solid #0a3c59;
     background: #3e779d;
     background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
@@ -154,6 +154,11 @@ body {
     z-index: 26;
     font-size: 14;
     /* display: inline-block;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv3-15-1-2 {
@@ -168,6 +173,11 @@ body {
     z-index: 27;
     font-size: 14;
     /* display: inline-block;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv3-15-2 {
@@ -181,6 +191,12 @@ body {
     z-index: 6;
     font-size: 20;
     /* display: inline-block;*/
+    /* display: inline-block;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv4 {
@@ -210,6 +226,11 @@ body {
     z-index: 8;
     font-size: 14;
     /*display: inline-block;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv6 {
