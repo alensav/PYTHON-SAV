@@ -10,6 +10,32 @@ body {
     background-color: #d2f1b8;
 }
 
+.button {
+    width: 180px;
+    height: 30px;
+    border: 3px solid #0a3c59;
+    background: #3e779d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+    background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+    background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+    background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+    background: -o-linear-gradient(top, #65a9d7, #3e779d);
+    background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+    /*padding: 12px 24px;*/
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    text-shadow: #7ea4bd 0 1px 0;
+    color: #eff1f2;
+    font-size: 17px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
 .dv0 {
     border: 1px solid rgb(19, 19, 18);
     position: relative;
@@ -33,21 +59,22 @@ body {
 .dv1 {
     border: 1px solid rgb(19, 19, 18);
     height: 100%;
-    width: 5%;
+    width: 7%;
     background-color: #4de680;
     position: absolute;
     margin: 0;
     top: 0;
     z-index: 3;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .dv2 {
     border: 1px solid rgb(19, 19, 18);
     float: left;
-    left: 5%;
+    left: 7%;
     height: 100%;
-    width: 95%;
+    width: 93%;
     background-color: #4de680;
     position: relative;
     z-index: 4;
@@ -56,14 +83,19 @@ body {
 .dv3_2 {
     top: 0px;
     border: 1px solid rgb(19, 19, 18);
-    height: 80%;
+    height: 90%;
     width: 100%;
     background-color: #e1e977;
     position: relative;
     z-index: 5;
     margin: 0px auto;
     box-sizing: border-box;
-    font-size: 0;
+    /*font-size: 0;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv3 {

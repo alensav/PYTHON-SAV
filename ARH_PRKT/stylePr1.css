@@ -128,6 +128,11 @@ body {
     z-index: 6;
     font-size: 14;
     display: inline-block;
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv3-1 {
@@ -237,6 +242,11 @@ body {
     z-index: 7;
     font-size: 14;
     /*display: inline-block;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv5 {
