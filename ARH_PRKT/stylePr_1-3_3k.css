@@ -6,6 +6,10 @@ body {
     font-size: 14px;
 }
 
+p {
+    text-indent: 25px;
+}
+
 body {
     background-color: #d2f1b8;
 }

@@ -6,6 +6,10 @@ body {
     font-size: 14px;
 }
 
+p {
+    text-indent: 25px;
+}
+
 iframe {
     background-color: orange;
 }
