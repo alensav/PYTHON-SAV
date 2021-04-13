@@ -10,13 +10,6 @@ body {
     background-color: #d2f1b8;
 }
 
-.leftimg {
-    float: right;
-    /* Выравнивание по левому краю */
-    margin: 7px 7px 7px 0;
-    /* Отступы вокруг картинки */
-}
-
 .button {
     width: 180px;
     height: 30px;
@@ -43,13 +36,9 @@ body {
     vertical-align: middle;
 }
 
-h {
-    text-align: "center";
-}
-
 .dv0 {
     border: 1px solid rgb(19, 19, 18);
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
     background-color: #97ccb6;
@@ -70,20 +59,22 @@ h {
 .dv1 {
     border: 1px solid rgb(19, 19, 18);
     height: 100%;
-    width: 5%;
+    width: 7%;
     background-color: #4de680;
     position: absolute;
     margin: 0;
     top: 0;
     z-index: 3;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .dv2 {
     border: 1px solid rgb(19, 19, 18);
-    float: right;
+    float: left;
+    left: 7%;
     height: 100%;
-    width: 95%;
+    width: 93%;
     background: linear-gradient(90deg, #FFFD00, rgb(143, 195, 235));
     position: relative;
     z-index: 4;
@@ -92,14 +83,19 @@ h {
 .dv3_2 {
     top: 0px;
     border: 1px solid rgb(19, 19, 18);
-    height: 80%;
+    height: 90%;
     width: 100%;
-    background-color: #e1e977;
+    background: linear-gradient(180deg, rgb(238, 228, 142), rgb(162, 236, 184));
     position: relative;
     z-index: 5;
-    margin: 0 auto;
+    margin: 0px auto;
     box-sizing: border-box;
     /*font-size: 0;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
 }
 
 .dv3 {
@@ -119,122 +115,36 @@ h {
     border: 1px solid rgb(19, 19, 18);
     left: 0px;
     top: 0px;
-    height: 100%;
+    height: 99%;
     width: 100%;
-    background-color: #eef096;
+    background-color: #d3f5b4;
     position: absolute;
     z-index: 6;
     font-size: 14;
-    overflow: hidden;
     display: inline-block;
-    overflow-x: scroll;
-    /* прокрутка по горизонтали */
-    overflow-y: scroll;
-    /* прокрутка по вертикали */
 }
 
 .dv3-15 {
     border: 1px solid rgb(19, 19, 18);
-    left: 0px;
-    top: 0px;
-    height: 99%;
-    width: 60%;
-    background-color: #f0a896;
-    position: absolute;
-    z-index: 6;
-    font-size: 14;
-    /* display: inline-block;*/
-}
-
-.dv3-15-1 {
-    border: 1px solid rgb(19, 19, 18);
-    left: 0px;
-    top: 0px;
-    height: 49%;
-    width: 100%;
-    background-color: #c2f1b0;
-    position: absolute;
-    z-index: 6;
-    font-size: 20;
-    /* display: inline-block;*/
-}
-
-.dv3-15-1-1 {
-    border: 1px solid rgb(19, 19, 18);
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    width: 50%;
-    background-color: #b0e4f1;
-    position: absolute;
-    z-index: 6;
-    font-size: 24;
-    /* display: inline-block;*/
-}
-
-.dv3-15-1-2 {
-    border: 1px solid rgb(180, 241, 241);
     left: 50%;
-    float: left;
     top: 0px;
     height: 100%;
     width: 50%;
-    background-color: #c2f1b0;
-    position: absolute;
-    z-index: 6;
-    font-size: 25;
-    /* display: inline-block;*/
-}
-
-.dv3-15-1-2 {
-    border: 1px solid rgb(19, 19, 18);
-    left: 0px;
-    top: 0px;
-    height: 49%;
-    width: 100%;
-    background-color: #c2f1b0;
-    position: absolute;
-    z-index: 6;
-    font-size: 20;
-    /* display: inline-block;*/
-}
-
-.dv3-15-2 {
-    border: 1px solid rgb(19, 19, 18);
-    left: 0px;
-    top: 0px;
-    height: 49%;
-    width: 100%;
-    background-color: #96f0a5;
-    position: absolute;
-    z-index: 6;
-    font-size: 20;
-    /* display: inline-block;*/
-}
-
-.dv4 {
-    border: 1px solid rgb(19, 19, 18);
-    top: 0px;
-    left: 30%;
-    float: left;
-    height: 99%;
-    width: 35%;
-    background-color: #f0a896;
+    background-color: #96a6f0;
     position: relative;
-    z-index: 7;
+    z-index: 6;
     font-size: 14;
-    /*display: inline-block;*/
+    /* display: inline-block;*/
 }
 
 .dv5 {
     border: 1px solid rgb(19, 19, 18);
     position: absolute;
     top: 0px;
-    left: 65%;
-    float: left;
+    left: 0%;
     height: 99%;
-    width: 35%;
-    background-color: #f0a896;
+    width: 100%;
+    background-color: #f16689;
     /*position: relative;*/
     /* margin-right: 1%;*/
     z-index: 8;
@@ -247,14 +157,8 @@ h {
     /*top: 95%;*/
     height: 10%;
     width: 100%;
-    overflow: hidden;
-    display: inline-block;
-    overflow-x: scroll;
-    /* прокрутка по горизонтали */
-    overflow-y: scroll;
-    /* прокрутка по вертикали */
     background: linear-gradient(90deg, rgb(238, 190, 231), rgb(145, 231, 118));
-    position: relative;
+    position: absolute;
     margin-bottom: 0;
     z-index: 9;
 }

@@ -103,7 +103,7 @@ body {
     float: right;
     height: 100%;
     width: 95%;
-    background-color: #4de680;
+    background: linear-gradient(90deg, #FFFD00, rgb(143, 195, 235));
     position: relative;
     z-index: 4;
 }
@@ -278,6 +278,7 @@ body {
     /*top: 95%;*/
     height: 10%;
     width: 100%;
+    background: linear-gradient(90deg, rgb(238, 190, 231), rgb(145, 231, 118));
     background-color: #a19fe4;
     position: relative;
     margin-bottom: 0;
@@ -288,6 +289,8 @@ body {
     height: 10%;
     width: 33.3%;
     position: absolute;
+    background: linear-gradient(90deg, rgb(238, 190, 231), rgb(145, 231, 118));
+    z-index: 33;
 }
 
 .dv_6-2 {
@@ -295,6 +298,8 @@ body {
     width: 33.3%;
     position: relative;
     float: left;
+    background: linear-gradient(90deg, rgb(238, 190, 231), rgb(145, 231, 118));
+    z-index: 31;
 }
 
 .dv_6-3 {
@@ -302,6 +307,8 @@ body {
     width: 33.3%;
     position: relative;
     float: left;
+    background: linear-gradient(90deg, rgb(238, 190, 231), rgb(145, 231, 118));
+    z-index: 32;
 }
 
 

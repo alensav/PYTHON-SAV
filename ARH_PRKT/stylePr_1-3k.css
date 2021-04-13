@@ -75,7 +75,7 @@ body {
     left: 7%;
     height: 100%;
     width: 93%;
-    background-color: #4de680;
+    background: linear-gradient(90deg, #FFFD00, rgb(143, 195, 235));
     position: relative;
     z-index: 4;
 }
@@ -85,7 +85,7 @@ body {
     border: 1px solid rgb(19, 19, 18);
     height: 90%;
     width: 100%;
-    background-color: #e1e977;
+    background: linear-gradient(180deg, rgb(226, 13, 13), rgb(6, 38, 145));
     position: relative;
     z-index: 5;
     margin: 0px auto;
@@ -157,7 +157,7 @@ body {
     /*top: 95%;*/
     height: 10%;
     width: 100%;
-    background-color: #a19fe4;
+    background: linear-gradient(90deg, rgb(238, 190, 231), rgb(145, 231, 118));
     position: absolute;
     margin-bottom: 0;
     z-index: 9;
