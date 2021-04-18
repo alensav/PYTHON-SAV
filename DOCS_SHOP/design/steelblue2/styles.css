@@ -1,0 +1,264 @@
+/* Каркас сайта НАЧАЛО */
+html{height:100%;}
+body{min-height:100%; position:relative; min-width:920px; background-color:#26536F; color:#ffffff; font-size:13px; font-family: Tahoma, sans-serif; background-image:url(img/bg.gif); background-repeat:repeat;}
+* html body{height:100%;}
+/* *{margin:0px; padding:0px;} */
+body, ul{margin:0px; padding:0px;}
+
+#wrapper{width:100%; padding-bottom:80px; overflow:hidden;}
+#wrap1{width:100%; float:left; margin-right:-210px;}
+#wrap2{margin-right:210px;}
+#rightMenu{float:right; width:210px; background: linear-gradient(to right, #27536f 0%,#26536f 51%,#365f79 77%,#496f86 100%);}
+#wrap3{float:right; width:100%; margin-left:-210px;}
+#central{margin-left:210px; padding:8px;}
+#leftMenu{float:left; width:210px; background: linear-gradient(to right, #496f86 0%,#365f79 23%,#26536f 49%,#27536f 100%);}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section{display:block;} /* HTML5 теги для старых версий браузеров */
+/* КОНЕЦ Каркас сайта */
+
+
+img{border:0px;}
+h1{font-size:21px;}
+h2{font-size:19px;}
+h3{font-size:18px;}
+h1, h2{margin-top:5px; margin-bottom:8px;}
+
+input[type="submit"], button{margin:1px; padding-left:5px; padding-right:5px; padding-top:2px; padding-bottom:2px; background-color:#266594; color:#ffffff; border:1px solid #345A70; border-radius:4px; cursor:pointer; background: linear-gradient(to bottom, #266594 0%,#4a7fa6 38%,#5284aa 48%,#5284a9 52%,#4a7fa6 62%,#266594 100%);
+}
+input[type="submit"]:hover, button:hover{background-color:#2470aa; background: linear-gradient(to bottom, #2470aa 0%,#448abc 38%,#518dbb 48%,#518dbb 52%,#448abc 62%,#3188c7 100%);}
+
+input[type="checkbox"]{margin-right:3px; vertical-align:middle;}
+ul, ol{margin-left:20px;}
+p{margin-top:10px; margin-bottom:10px; }
+
+/* цвет ссылок */
+a:link{text-decoration:none; color: #fbf8c4;}
+/* цвет посещённых ссылок */
+a:visited{text-decoration:none; color: #fbf8c4;}
+/* цвет ссылок при наведении мышью */
+a:hover{text-decoration:underline; color: #ffffff;}
+/* цвет активных ссылок */
+a:active{color:#c8deee;}
+
+/* Верхняя часть ("Шапка") */
+.header{width:100%; overflow:hidden; background-color:#ffffff; background-image:url(img/logo.jpg); background-repeat:no-repeat; height:132px;}
+.hdrLeft{float:left; width:468px;} /* левая часть шапки */
+.hdrWideRight{margin-left:468px;} /* Правая часть шапки */
+.cart_info{height:73px; margin-top:5px; text-align:right;} /* 73+5+54 decBar=132 высота шапки */
+.decBar{white-space:nowrap; background: linear-gradient(to bottom, #ffffff 0%,#ffffff 40%,#edf5f8 42%,#dee8f1 47%,#b4cbdb 58%,#699abb 75%,#3e7ba7 87%,#276a9e 94%,#216999 96%,#1a6197 100%);}
+.decBar img{vertical-align:bottom;}
+/* КОНЕЦ Верхняя часть ("Шапка") */
+
+/* Нижняя часть */
+.footer{position:absolute; bottom:0px; background-color:#243F4F; width:100%; min-height:50px; font-size:11px; color:#FFAA00; background: linear-gradient(to bottom, #355d72 0%,#243f4f 100%); border-top:3px double #355d72;}
+.fooLeft{float:left; padding:5px; width:200px; padding-top:15px; padding-left:20px;}
+.fooRight{float:right; padding:5px; width:200px; text-align:right; padding-top:15px; padding-right:20px;text-align:center;}
+.fooCenter{padding:5px; text-align:center;}
+.footer a:link{text-decoration:none; color:#FFAA00;}
+.footer a:visited{text-decoration:none; color:#FFAA00;}
+.footer a:hover{text-decoration:underline; color:#FFAA00;}
+.footer a:active{text-decoration:underline; color:#FFAA00;}
+/* КОНЕЦ Нижняя часть */
+
+.clear{display:block; clear:both;}
+.frmSelCurrency{text-align:right;} /* форма выбора валюты */
+.nowrap{white-space:nowrap;} /* запрет переноса строк */
+.imgst{vertical-align:middle; margin-right:3px;} /* Центровка маленьких изображений слева от текста */
+
+.horizontal_menu{padding-left:5px; padding-top:8px; padding-bottom:8px; text-align:center; background-color:#166095; background: linear-gradient(to bottom, #166095 0%,#216799 10%,#2f72a0 19%,#5c90b5 42%,#6596b9 48%,#6194b7 55%,#2f72a0 81%,#206899 90%,#166195 100%);}
+.horizontal_menu span{white-space:nowrap; font-size:13px; margin-left:2px; margin-right:2px; } /* Контейнер span горизонтального меню */
+.horizontal_menu span img{vertical-align:middle; margin-right:4px;} /* Изображения горизонтального меню */
+
+.content{padding:5px; overflow:auto;} /* Центральный контент */
+.openedLink{font-weight:bold;} /* Ссылка, открытая в данный момент */
+
+.sidebar{border-bottom:solid 1px #376079;} /* Вертикальные блоки меню */
+.sidebar nav, .sidebar aside{}
+.sidebar nav li{margin:4px;}
+.sidebar ul{margin-left:10px; margin-right:1px; margin-bottom:3px; list-style-type:none;}
+.sidebar li img{vertical-align:middle; margin-right:2px;}
+#leftMenu nav, #leftMenu aside{margin-left:4px; border-right:solid 2px #1f697c;}
+#rightMenu nav, #rightMenu aside{margin-right:4px; border-left:solid 2px #1f697c;}
+
+.mnuBody{padding-bottom:20px;}
+.mnuHdr{color:#FAE137; font-weight:bold; padding:4px;} /* Заголовки вертикальных блоков меню */
+.mnuHdr a{text-decoration:underline; color:#FAE137;}
+.mnuHdr a:hover{text-decoration:none;}
+
+.menu_categories .mnuBody a, .vertical_menu .mnuBody a, .menu_content .mnuBody a, .menu_manufacturers .mnuBody a{display:block;}
+.menu_categories .mnuBody a:hover, .vertical_menu .mnuBody a:hover, .menu_content .mnuBody a:hover, .menu_manufacturers .mnuBody a:hover{background-color:#226788;}
+
+/* изображения заголовков блоков меню */
+.mnuHdr:before{content:url(img/a1.gif); padding-right:4px;}
+
+.lEmpt{display:none;} /* скрываем чтобы убрать вертикальные отступы в IE6 */
+
+.menu_content li, .menu_manufacturers li, .vertical_menu li{border-bottom:dashed 1px #cccccc; padding-bottom:4px;}
+
+/* Меню производителей */
+.menu_manufacturers:hover ul{display:block;} /* При наведении мышью показываем */
+/* КОНЕЦ Меню производителей */
+
+.menu_special_offers .mnuCycle, .menu_new_products .mnuCycle{border:1px solid #cccccc; width:180px; display:inline-block; text-align:center; vertical-align:top; padding:5px; min-height:60px; max-height:300px; overflow:auto;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+.mnuCycle img{max-width:100%;}
+/* КОНЕЦ Спецпредложения, Новые товары */
+
+/* блок меню авторизации */
+.menu_login_form form{text-align:center;}
+
+/* блок меню корзины */
+.mnuCart{width:200px; max-height:66px; overflow:auto; font-size:11px; padding:2px; color:#156066; border:1px dashed #156066; margin-right:15px; display:inline-block;}
+.mnuCart .mnuHdr{display:none;}
+.mnuCart .mnuBody{border:0px; margin:0px; padding:2px; text-indent:16px; text-align:center; background-image:url(img/cart.gif); background-position: 1px 2px; background-repeat:no-repeat;}
+.mnuCart .mnuBody a{color:#1f697c; text-decoration:underline;}
+.mnuCart .mnuBody a:hover{color:#ff0000; text-decoration:none;}
+.addReport{color:#ff0000;}
+.moreCart, .orderCart{display:inline; margin-right:4px;}
+
+.mnuCycle{border-bottom:1px dashed #cccccc; padding-bottom:5px; margin:4px;}
+.old_price{text-decoration:line-through;}
+.old_price span{color:#ff0000;}
+.old_price2{text-decoration:line-through; color:#ff0000;}
+
+.coltbl{border-top: 1px ridge #f0f0f4;	border-right:1px outset #f0f0f4; border-bottom:1px outset #f0f0f4; border-left:1px ridge #f0f0f4; width:100%; border-collapse:collapse;} /* полосатые таблицы в форме регистрации, корзине, и оформления заказа и т.д. */
+.coltbl td{padding:4px;}
+.htr{background-color:#1d5f90; font-weight:bold; height:20px;} /* заголовок таблицы */
+.htr td{vertical-align:top; font-size:12px; background: linear-gradient(to bottom, #618fb2 0%,#38729d 53%,#1d5f90 100%);}
+/* 2-ные заголовки таблиц */
+.htr2{background-color: #1d5f90; font-size:12px; font-weight:bold; height:20px;}
+.str{background-color: #26536F;} /* светлая полоса */
+.ttr{background-color: #244D67;} 	/* тёмная полоса */
+.ftr{background-color: #26536F;} /* нижняя часть */
+.CartFtr{background-color: #26536F;} 	/* нижняя часть корзины */
+.CartTotal caption{text-align:left; font-weight:bold;}
+.CartTotal td{border-bottom:solid 1px #FFFFFF;} /* таблица внутри нижней части корзины */
+.cart_independ body{min-width:1%;}
+.alignCenter{text-align:center;}
+.alignRight{text-align:right;}
+
+.login_form, .forgot_password_form, .forgot_password_confirm{text-align:center;}
+.login_form table, .forgot_password_form table, .forgot_password_confirm table{margin:0 auto; text-align:center;}
+
+.red, .req{color:#ff0000;}
+
+.msg{padding:5px; margin-top:8px; margin-bottom:8px; border-radius:10px;}
+.msgHdr{font-size:17px; font-weight:bold;}
+.errMsg{color:#ff0000; border:2px solid #ff0000;}
+.successMsg{border:2px solid #009d00;}
+
+.authText{width:100px;}
+
+.main_categories{text-align:center;}
+.mainCatCell{width:200px; display:inline-block; text-align:left; margin-left:2px; margin-right:2px; margin-top:6px; margin-bottom:6px; padding:5px; vertical-align:top;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+.mainCatCell img{vertical-align:middle; margin-right:3px;}
+.mcRoot{font-size:17px; font-weight:bold;}
+.mcSub{font-size:13px;}
+
+.catProducts, .mainProducts, .mnfProducts, .searchProducts{clear:both; text-align:center;}
+.lstProduct{border:1px solid #888888; display:block; margin-left:2px; margin-right:2px; margin-top:6px; margin-bottom:6px; padding:5px; vertical-align:top; font-size:14px; overflow:hidden; text-align:left;}
+.lstProduct:hover{overflow:auto;}
+.lstProduct h3{margin:0px; font-size:18px; text-align:left;}
+.prSmallImg{text-align:left; float:left; margin-right:8px;}
+.prSmallImg img{max-width:230px;}
+.prSmallImg img, .prDtImg img, .prGalImg img{border:5px solid #ffffff; border-radius:8px;}
+
+.mainProducts{text-align:center;}
+.mainProducts .lstProduct{border:0px; width:240px; max-height:300px; display:inline-block; margin-left:2px; margin-right:2px; margin-top:6px; margin-bottom:6px; padding:5px; vertical-align:top; font-size:14px; overflow:auto; text-align:center;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+.pTitle:before{content:'' !important;}
+.mainProducts .lstProduct{font-size:12px;}
+.mainProducts .lstProduct h3{font-size:12px; text-align:center;}
+.mainProducts .prSmallImg{float:none; text-align:center;}
+
+.price{font-weight:bold;}
+
+.pages_links{clear:both; margin-top:10px;}
+
+.catChainLnk, .prDtChainLnk{font-size:15px; font-weight:bold;}
+
+.subcategories{text-align:center;}
+.SubcatTitle{font-size:14px;}
+.SubCats{width:180px; display:inline-block; text-align:left; padding:1px; vertical-align:top;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+
+.category_image{float:right; margin:3px;}
+
+.frmSort{white-space:nowrap; overflow:auto;}
+
+.pages_links a{font-size:14px; text-decoration:underline;}
+.pages_links a:hover{color:#ffffff; text-decoration:none;}
+.PglPrev:before{content:'\2190'; margin-right:3px;}
+.PglNext:after{content:'\2192'; margin-left:3px;}
+
+.frmSearch{text-align:left; font-size:13px; color:#000000; margin:0px; display:inline-block;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+.frmSearch input[type="submit"]{margin-left:2px;}
+.frmSearch input[type="checkbox"]{margin-left:0px; margin-right:2px; vertical-align:middle;}
+
+.mnfRowImg{float:right;margin-left:5px;margin-bottom:3px;}
+.mnfRowSep{margin-top:14px; margin-bottom:14px; padding-bottom:14px; border-bottom:2px ridge #cccccc; clear:both;}
+
+.mnfImg{float:right; margin-left:5px; margin-bottom:3px;}
+
+.newsSep{margin-bottom:22px;}
+.moreAllNews{margin-top:15px; margin-bottom:15px;}
+
+.frmOrderLogin table{text-align:center;}
+.selPayMethod{margin-bottom:10px;}
+.order_step2{max-width:550px;}
+.protectImg{vertical-align:middle; margin-left:3px;}
+
+.delivery_cost{text-decoration:underline;}
+.allContentList li{margin-bottom:9px; list-style-image:url(img/ls.gif);}
+
+/* Прайс-лист НАЧАЛО */
+.priceList body{}
+.priceHeader{width:100%;}
+.plhLeft{float:left; width:240px; padding:10px;}
+.plhCenter{margin:0 240px 0 240px; padding-top:10px;}
+.plhRight{float:right; width:240px; text-align:right; padding-top:10px;}
+.priceCat{background-color:#314552; font-weight:bold;}
+.priceFooter{padding:16px; text-align:center;}
+/* Прайс-лист КОНЕЦ */
+
+.pTitle:before{content:url(img/ls-big.gif); vertical-align:middle; margin-right:4px;}
+.prDtSku{font-style:italic;}
+.prDtMainInfo, .frmPrDetail{display:inline-block; vertical-align:top; margin-right:8px;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+.prDtImg{overflow:auto; display:inline-block; max-width:100%;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+.prDtImg img{max-width:100%;}
+.prDtQuantity{font-style:italic;}
+.prGalImg{display:inline-block; margin:3px; padding:0px;max-height:104px;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+.similar_products{margin-top:12px;}
+.similar_products h3{margin-left:8px; margin-bottom:8px;}
+.similarProduct{border:1px ridge #cccccc; margin:1px; padding:1px; padding-top:3px; display:inline-block; vertical-align:top; text-align:center; width:240px; min-height:150px; max-height:300px; overflow:auto;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+ .similarProduct img{max-width:100%;}
+
+.mnfName h1{display:inline; margin-right:12px;}
+
+.product_comments{margin-top:12px;}
+.pComHdr{background-color:#416F8D; font-weight:bold; margin-top:12px; padding:4px;}
+.admin_reply .pComHdr{font-style:italic;}
+.cpdate{float:right;}
+.admin_reply{margin-left:50px;}
+#pmdiv{margin-top:12px;}
+
+.your_orders{margin:12px 0px 12px 0px;}
+.frmChangeProfile{max-width:550px;}
+
+.submitBl, .only_cart{margin-top:15px; margin-bottom:15px;}
+
+/* НАЧАЛО Товары в несколько столбцов везде */
+.lstProduct{
+display:inline-block;
+width:240px; /* ширина блока товара */
+height:300px; /* высота блока товара */
+}
+
+.pTitle{
+font-size:16px !important; /* размер шрифта названия товара */
+text-align:center !important; /* центровка названия товара */
+}
+
+.prSmallImg{
+float:none; /* отмена выравнивания изображения */
+margin:0px; /* внешний отступ изображения */
+text-align:center; /* центровка изображения */
+}
+/* КОНЕЦ Товары в несколько столбцов везде */

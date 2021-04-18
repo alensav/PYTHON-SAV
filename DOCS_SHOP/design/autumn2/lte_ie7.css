@@ -1,0 +1,17 @@
+/* дополнения для IE7 и ниже */
+
+.menu_special_offers .mnuCycle, .menu_new_products .mnuCycle{display:inline; zoom:1;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+
+.mainCatCell{display:inline; zoom:1;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+
+.lstProduct{height:300px; display:inline; zoom:1;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+
+.SubCats{display:inline; zoom:1;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+
+.prDtMainInfo, .frmPrDetail{display:inline; zoom:1;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+
+.prDtImg{display:inline; zoom:1;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+
+.similarProduct{display:inline; zoom:1;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+
+.hdrWideRight{width:490px;}

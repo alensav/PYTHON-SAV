@@ -1,0 +1,27 @@
+
+sort_by = Сортировать по:
+title = Наименование товара
+sku = Артикул
+price = Средняя цена
+total_price = Сумма
+total_quantity = Количество заказанных товаров
+pages = Страницы
+show_all = Показать все
+show_statistics = Показать
+from_date = с&nbsp;&nbsp;&nbsp;
+to_date = по
+day = Число
+month = Месяц
+year = Год
+for_chosen_period = За выбранный период заказано
+products_names = наименований товаров
+in_total_quantity = в суммарном количестве
+on_the_sum = на общую сумму
+results = Итоги:
+middle_price_descr = Поскольку на протяжении времени цена на товары могла изменяться, здесь указывается округлённая средняя цена товаров, которые были заказаны за выбранный период.
+status = Статус заказа
+pay_method = Способ оплаты
+delivery_method = Способ доставки
+username = Пользователь (логин)
+email = e-mail покупателя
+not_selected = все

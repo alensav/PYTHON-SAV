@@ -1,0 +1,10 @@
+
+delivery_methods = Способы доставки
+delivery_method_desript = Описание способа доставки
+delivery_method = Способ доставки
+short_descript = Краткое описание
+details_descript = Подробное описание
+other_delivery_methods = Другие способы доставки
+delivery_cost = Стоимость доставки
+free_delivery_from = Бесплатная доставка, если сумма заказа от
+not_free_delivery = не осуществляется

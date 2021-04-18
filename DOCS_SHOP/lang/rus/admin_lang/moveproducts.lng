@@ -1,0 +1,8 @@
+
+choose_category = Выберите раздел, в который будут перемещены все товары из раздела
+move_all_products = Переместить все товары
+cancel = Отмена
+invalid_catid = Не указан id раздела!
+cat_with_id = Раздел с id
+not_found = не существует!
+products_success_moved = Товары перемещены в раздел

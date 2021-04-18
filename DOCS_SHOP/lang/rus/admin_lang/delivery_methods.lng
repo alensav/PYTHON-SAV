@@ -1,0 +1,21 @@
+
+editing_delivery_method = Изменение способа доставки
+adding_delivery_method = Добавление способа доставки
+add_delivery_method = Добавить способ доставки
+name = Название
+deliverymethod_name = Название способа доставки
+short_descript = Краткое описание
+long_descript = Подробное описание
+on = Доступен
+delete = Удалить
+delete_delivery_method = удалить этот способ доставки
+dm_enabled_in_shop = Доступен ли этот способ доставки в магазине
+please_enter_dmname = Укажите, пожалуйста, название способа доставки!
+dm_deleted = Способ доставки удалён
+all_delivery_methods = Все способы доставки
+auto_br = Преобразовать символы новой строки в HTML
+delivery_cost = Стоимость доставки
+delivery_cost_explanation = (если равна 0, то не будет отображаться в форме заказа)
+nodelete_1_dmethod  = Нельзя удалить единственный способ доставки!
+free_delivery_sum = Бесплатная доставка, если сумма заказа от
+free_delivery_sum_help = Чтобы не использовать эту функцию, установите значение 0.00

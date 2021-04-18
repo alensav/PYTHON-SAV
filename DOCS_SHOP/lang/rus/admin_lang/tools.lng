@@ -1,0 +1,10 @@
+
+db_copy = Резервное копирование базы данных
+export_csv = Экспорт товаров формат .csv (совместим с Excel)
+import_csv = Импорт товаров из формата .csv (совместим с Excel)
+phpinfo = Системная информация PHP
+import_light = Импорт из версии "Light"
+import_trade = Импорт из версии "Trade"
+import_catalog = Импорт из версии "Catalog"
+db_restore  = Восстановить базу данных
+change_prices = Быстрое изменение цен

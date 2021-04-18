@@ -1,0 +1,21 @@
+
+change_profile = Личный кабинет
+save_changes = Сохранить изменения
+changes_success = Изменения сохранены
+new_password = Новый пароль
+repeat_new_password = Повторите новый пароль
+group = Группа:
+discount_at_the_purchase = скидка при покупке
+login = Логин
+your_orders = Ваши заказы
+order_number = Номер заказа
+sum = Сумма
+status = Статус
+back_to_orders_list = Вернуться к списку заказов
+not_permissions = Вы не имеете прав доступа к этой странице.
+orders_not_found = Заказов не найдено.
+from = от
+to = до
+about_discounts = Информация о скидках
+change_password = Изменить пароль
+product_not_found = В настоящий момент этот товар недоступен в каталоге

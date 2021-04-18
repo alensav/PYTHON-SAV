@@ -1,0 +1,25 @@
+
+add_manufacturer = Добавить производителя
+edit_manufacturer = Редактирование производителя
+manufacturer_title = Название
+delete = Удалить
+delete_manufacturer = удалить этого производителя
+manufacturer_is_deleted = Производитель удалён
+no_manufacturers = Нет записей
+sort_index = Порядок сортировки
+description = Описание
+upload_image = Загрузить изображение
+delete_image = Удалить изображение
+meta_title = Заголовок страницы (META TITLE). Если значение не задано, то заголовок будет формироваться из названия производителя.
+meta_description = Описание для поисковых систем (META DESCRIPTION)
+meta_keywords = Ключевые слова для поисковых систем (META KEYWORDS). Разделяйте слова запятой с пробелом.
+meta_tags = Дополнительные META теги страницы (только HTML-теги)
+all_manufacturers = Все производители
+cant_delete_file = Не удалось удалить файл
+not_manufacturer_title = Необходимо задать название производителя!
+manufacturer_url = URL сайта производителя
+check_chmod = Убедитесь что установлены атрибуты 0777 на папку
+auto_br = Преобразовать символы новой строки в HTML
+mnfname = Имя производителя для ссылок (ЧПУ)
+link_name = Имя для ссылок
+used_in_other_mnf = уже используется для другого производителя!

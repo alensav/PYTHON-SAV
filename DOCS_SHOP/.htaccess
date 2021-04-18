@@ -1,0 +1,38 @@
+DirectoryIndex index.php index.html index.htm
+
+<ifModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^product([0-9]{1,10})\.html$ index.php?product=$1 [L]
+RewriteRule ^cat([0-9]{1,10})/$ index.php?cat=$1 [L]
+RewriteRule ^cat([0-9]{1,10})/pg([0-9]{1,10})\.html$ index.php?cat=$1&pg=$2 [L]
+RewriteRule ^news/pg([0-9]{1,10})\.html$ index.php?view=news&pg=$1 [L]
+RewriteRule ^news/([0-9a-zA-Z\x80-\xFF\x20\_\-]{1,255})\.html$ index.php?view=news&newsname=$1 [L]
+RewriteRule ^news/$ index.php?view=news [L]
+RewriteRule ^content/pg([0-9]{1,10})\.html$ index.php?view=content&pg=$1 [L]
+RewriteRule ^content/([0-9a-zA-Z\x80-\xFF\x20\_\-]{1,255})\.html$ index.php?view=content&pname=$1 [L]
+RewriteRule ^content/$ index.php?view=content [L]
+RewriteRule ^agreement\.html$ index.php?view=agreement [L]
+RewriteRule ^delivery_methods/$ index.php?view=delivery_methods [L]
+RewriteRule ^delivery_methods/dm([0-9]{1,10})\.html$ index.php?view=delivery_methods&dm=$1 [L]
+RewriteRule ^pay_methods/$ index.php?view=pay_methods [L]
+RewriteRule ^pay_methods/pm([0-9]{1,10})\.html$ index.php?view=pay_methods&pm=$1 [L]
+RewriteRule ^manufacturers/([0-9a-zA-Z\x80-\xFF\x20\/\_\-]{1,255})/pg([0-9]{1,10})\.html$ index.php?view=manufacturers&mnfname=$1&pg=$2 [L]
+RewriteRule ^manufacturers/pg([0-9]{1,10})\.html$ index.php?view=manufacturers&pg=$1 [L]
+RewriteRule ^manufacturers/([0-9a-zA-Z\x80-\xFF\x20\/\_\-]{1,255})/$ index.php?view=manufacturers&mnfname=$1 [L]
+RewriteRule ^manufacturers/$ index.php?view=manufacturers [L]
+RewriteRule ^discounts/$ index.php?view=discounts [L]
+RewriteRule ^discounts/group\.html$ index.php?view=discounts&dtype=group [L]
+RewriteRule ^product_comments/([0-9a-zA-Z\x80-\xFF\x20\_\-]{1,255})/pg([0-9]{1,10})\.html$ index.php?prname=$1&sub=product_comments&pg=$2 [L]
+RewriteRule ^product_comments([0-9]{1,10})/pg([0-9]{1,10})\.html$ index.php?product=$1&sub=product_comments&pg=$2 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([0-9a-zA-Z\x80-\xFF\x20\_\-]{1,255})\.html$ index.php?prname=$1 [L]
+RewriteRule ^([0-9a-zA-Z\x80-\xFF\x20\/\_\-]{1,255})/pg([0-9]{1,10})\.html$ index.php?fcat=$1&pg=$2 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([0-9a-zA-Z\x80-\xFF\x20\/\_\-]{1,255})/([0-9a-zA-Z\x80-\xFF\x20\_\-]{1,255})\.html$ index.php?fcat=$1&prname=$2 [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([0-9a-zA-Z\x80-\xFF\x20\/\_\-]{1,255})/$ index.php?fcat=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([0-9a-zA-Z\x80-\xFF\x20\/\_\-]{0,255})([0-9a-zA-Z\x80-\xFF\x20\_\-]{1,1})$ $1$2/ [R=301,L]
+</ifModule>

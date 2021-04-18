@@ -1,0 +1,9 @@
+
+sr_not_match_requirements = Сервер не соответствует минимальным техническим требованиям
+sr_req_php_ver = Минимальная версия PHP, необходимая для работы
+sr_req_mysql_ver = Минимальная версия MySQL, необходимая для работы
+sr_your_version = Ваша версия
+sr_req_php_extensions = Обязательные расширения PHP, необходимые для работы
+sr_adv_php_extensions = Рекомендуемые расширения PHP (не обязательно)
+sr_ext_included = включено
+sr_ext_missing = отключено или отсутствует

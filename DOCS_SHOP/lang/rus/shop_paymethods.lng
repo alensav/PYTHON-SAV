@@ -1,0 +1,8 @@
+
+pay_methods = Способы оплаты
+pay_method_desript = Описание способа оплаты
+pay_method = Способ оплаты
+short_descript = Краткое описание
+details_descript = Подробное описание
+other_pay_methods = Другие способы оплаты
+available_currencies = Доступные валюты для этого способа оплаты:

@@ -1,0 +1,7 @@
+
+al_warning = Проверка настроек
+al_invalid_engine_url = URL адрес магазина, заданный в настройках не совпадает с фактическим URL адресом!
+reset_password_not_deleted = Не удалён файл reset_password.php!
+no_htaccess = Файл .htaccess отсутствует или пустой. Это может нарушить правильную работу.
+invalid_rewrite_base = Неправильный путь для директивы RewriteBase в файле .htaccess
+rewrite_base_help = Подробнее...

@@ -1,0 +1,26 @@
+
+item_similar = Похожие товары
+similar_notfound_product = Похожие товары можно задать только для уже существующего товара. Сначала добавьте товар, сохранив изменения, тогда эта возможность станет доступна.
+for_product = для
+product_title = Название
+product_sku = Артикул
+sort_index = Пор.сортировки
+eliminate = Исключить
+search_add_product = Найти и добавить товар в похожие
+search = Найти
+add_selected = Добавить отмеченные
+not_similar_products = Для этого товара не добавлено ни одного похожего товара
+for_title = по названию
+for_sku = по артикулу
+for_id = по ID товара
+not_search_for = Не выбран вариант поиска
+not_search_value = Не задано значение для поиска
+product = Товар
+not_found = не найден
+add = Добавить
+shows_first = Показаны первые
+search_results = найденных товаров
+in_similar_added_similar = в похожие товары добавляемых похожих товаров
+from_similar_eliminate_similar = из похожих товаров исключаемых похожих товаров
+edit_item_similar = похожие товары
+similar_disabled = Показ похожих товаров на странице с подробным описанием товара отключен в основной конфигурации

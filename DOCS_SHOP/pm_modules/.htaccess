@@ -1,0 +1,4 @@
+deny from all
+<Files "pm_module_sample.zip">
+allow from all
+</Files>

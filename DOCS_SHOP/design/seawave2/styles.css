@@ -1,0 +1,256 @@
+/* Каркас сайта НАЧАЛО */
+html{height:100%;}
+body{min-height:100%; position:relative; min-width:800px; background-color:#ffffff; color:#000000; font-family: 'Times new roman', Times, Serif; font-size:14px;}
+* html body{height:100%;}
+/* *{margin:0px; padding:0px;} */
+body, ul{margin:0px; padding:0px;}
+
+#wrapper{width:100%; padding-bottom:80px; overflow:hidden;}
+#wrap1{width:100%; float:left; margin-right:-210px;}
+#wrap2{margin-right:210px;}
+#rightMenu{float:right; width:210px;}
+#wrap3{float:right; width:100%; margin-left:-210px;}
+#central{margin-left:210px;padding:8px;}
+#leftMenu{float:left; width:210px;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section{display:block;} /* HTML5 теги для старых версий браузеров */
+/* КОНЕЦ Каркас сайта */
+
+/* Верхняя часть ("Шапка") */
+.header{width:100%; min-width:700px; overflow:hidden;  background-color:#d4e8e8;}
+.hdrLeft{float:left; width:300px;} /* левая часть шапки */
+.underLogo{margin:5px; text-align:center;} /* текст под логотипом если есть свободное место */
+.hdrWideRight{margin-left:300px; padding-top:8px;} /* Правая часть шапки на всю ширину */
+.hdrRight{float:right; text-align:center; font-size:19px; width:200px;} /* Правая часть шапки */
+.hdrCenter{margin-right:200px; overflow:hidden; min-width:200px; text-align:center; padding-top:8px; font-size: 21px; font-weight: bold; color: #606060; text-shadow: 3px 3px 4px #aaaaaa;} /* Центральная часть шапки */
+/* КОНЕЦ Верхняя часть ("Шапка") */
+
+/* Нижняя часть */
+.footer{position:absolute; bottom:0px; background-color:#ddeded; width:100%; min-height:64px; font-size:13px; background: linear-gradient(to bottom, #ffffff 0%,#f8fcfc 20%,#eef6f6 36%,#e5f3f3 50%,#dff1f1 64%,#d5ebeb 80%,#d1e7e7 100%);}
+.fooLeft{float:left; padding:5px; width:240px; padding-top:22px; padding-left:20px;}
+.fooRight{float:right; padding:5px; width:240px; text-align:right; padding-top:22px; padding-right:20px;}
+.fooCenter{padding:5px; padding-top:18px; text-align:center;}
+/* КОНЕЦ Нижняя часть */
+
+
+img{border:0px;}
+h1{font-size:21px;}
+h2{font-size:19px;}
+h3{font-size:18px;}
+h1, h2{margin-top:5px; margin-bottom:8px;}
+
+input[type="submit"], button{margin:1px; padding-left:5px; padding-right:5px; padding-top:2px; padding-bottom:2px; background-color:#d4e8e8; border:1px solid #345A70; border-radius:4px; cursor:pointer;
+background: linear-gradient(to bottom, #d4e8e8 0%,#daeded 20%,#e1f2f2 36%,#e5f9f9 50%,#e1f2f2 64%,#daeded 80%,#d4e8e8 100%);
+}
+
+input[type="submit"]:hover, button:hover{background:#bde5e5;
+background: linear-gradient(to bottom, #bde5e5 0%,#c1e9e9 20%,#caeeee 36%,#ccf6f6 50%,#caeeee 64%,#c1e9e9 80%,#bde5e5 100%);
+}
+
+input[type="checkbox"]{margin-right:3px; vertical-align:middle;}
+ul, ol{margin-left:20px;}
+p{margin-top:10px; margin-bottom:10px; }
+
+/* цвет ссылок */
+a:link{color: #327094; text-decoration:underline;}
+/* цвет посещённых ссылок */
+a:visited{color: #5c568b;}
+/* цвет ссылок при наведении мышью */
+a:hover{color: #ff0000;text-decoration:none;}
+/* цвет активных ссылок */
+a:active{color: #000000;}
+
+.clear{display:block; clear:both;}
+.frmSelCurrency{text-align:right;} /* форма выбора валюты */
+.nowrap{white-space:nowrap;} /* запрет переноса строк */
+.imgst{vertical-align:middle; margin-right:3px;} /* Центровка маленьких изображений слева от текста */
+.horizontal_menu{text-align:left; min-height:36px; padding-left:5px; padding-top:15px; background-color:#d4e8e8; border-bottom: 1px solid #cccccc; background: linear-gradient(to bottom, #d4e8e8 0%,#daeaea 10%,#e3f2f2 20%,#f9fcfc 33%,#ffffff 50%,#f9fcfc 67%,#e3f2f2 80%,#daeaea 90%,#d4e8e8 100%);} /* Горизонтальное меню */
+.horizontal_menu span{white-space:nowrap; font-size:15px; margin-left:2px; margin-right:2px; } /* Контейнер span горизонтального меню */
+.horizontal_menu span img{vertical-align:middle; margin-right:4px;} /* Изображения горизонтального меню */
+.content{padding:5px; overflow:auto;} /* Центральный контент */
+.openedLink{font-weight:bold;} /* Ссылка, открытая в данный момент */
+
+.sidebar{margin-top:20px;} /* Вертикальные блоки меню */
+.sidebar nav, .sidebar aside{border-top: 1px outset #f0f0f4; border-right: 1px ridge #f0f0f4; border-bottom: 1px ridge #f0f0f4; border-left: 1px outset #f0f0f4; margin-bottom:20px;}
+.sidebar nav li{margin:4px;}
+.sidebar ul{margin-left:10px; margin-right:1px; margin-bottom:3px; list-style-type: none;}
+.sidebar li img{vertical-align:middle; margin-right:2px;}
+
+#leftMenu nav, #leftMenu aside{margin-left:4px;}
+#rightMenu nav, #rightMenu aside{margin-right:4px;}
+
+.mnuBody{padding-bottom:6px;}
+.mnuHdr{background-color:#ddeded; background: linear-gradient(to bottom, #d0e8e8 0%,#d7eaea 20%,#dceded 36%,#deeded 50%,#e3efef 64%,#edf7f7 80%,#ffffff 100%); color:#345A70; font-weight:bold; padding:4px;} /* Заголовки вертикальных блоков меню */
+
+/* фоновые изображения заголовков блоков меню */
+.menu_categories .mnuHdr:after{content:url(img/vm-cat.gif); float:right; padding-right:4px;}
+.menu_content .mnuHdr:after{content:url(img/vm-content.gif); float:right; padding-right:4px;}
+.menu_news .mnuHdr:after{content:url(img/vm-news.gif); float:right; padding-right:4px;}
+.vertical_menu .mnuHdr:after{content:url(img/vm-cat.gif); float:right; padding-right:4px;}
+.lEmpt{display:none;} /* скрываем чтобы убрать вертикальные отступы в IE6 */
+
+.menu_categories li, .menu_content li, .menu_manufacturers li, .vertical_menu li{border-bottom:dashed 1px #cccccc; padding-bottom:4px;}
+
+/* Меню производителей */
+.menu_manufacturers .mnuHdr:after{content:url(img/vm-manufacturers.gif); float:right; padding-right:4px;}
+.menu_manufacturers:hover ul{display:block;} /* При наведении мышью показываем */
+/* КОНЕЦ Меню производителей */
+
+/* Спецпредложения, Новые товары */
+.menu_special_offers, .menu_new_products{border:solid 1px #cccccc; text-align:center; margin-bottom:15px;}
+.menu_special_offers .mnuHdr:after{content:url(img/vm-special.gif); float:right; padding-right:4px;}
+
+.menu_special_offers .mnuCycle, .menu_new_products .mnuCycle{border:solid 1px #cccccc; width:180px; display:inline-block; text-align:center; vertical-align:top; padding:5px; min-height:60px; max-height:300px; overflow:auto;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+.mnuCycle img{max-width:100%;}
+/* КОНЕЦ Спецпредложения, Новые товары */
+
+.menu_new_products .mnuHdr:after{content:url(img/vm-new_products.gif); float:right; padding-right:4px;}
+
+/* блок меню авторизации */
+.menu_login_form .mnuHdr:after{content:url(img/hm-login.gif); float:right; padding-right:4px;}
+.menu_login_form form{text-align:center;}
+
+/* блок меню корзины */
+.mnuCart .mnuHdr:after{content:url(img/vm-cart.gif); float:right; padding-right:4px;}
+.mnuCart .mnuBody{text-align:center;}
+.addReport{color:#ff0000;}
+
+.mnuCycle{border-bottom:1px dashed #cccccc; padding-bottom:5px; margin:4px;}
+.old_price{text-decoration:line-through;}
+.old_price span{color:#ff0000;}
+.old_price2{text-decoration:line-through; color:#ff0000;}
+
+.coltbl{border-top: 1px ridge #f0f0f4;	border-right:1px outset #f0f0f4; border-bottom:1px outset #f0f0f4; border-left:1px ridge #f0f0f4; width:100%; border-collapse:collapse;} /* полосатые таблицы в форме регистрации, корзине, и оформления заказа и т.д. */
+.coltbl td{padding:4px;}
+.htr{background-color:#ddeded; color:#345A70; font-weight:bold; height:20px;} /* заголовок таблицы */
+.htr td{vertical-align:top; font-size:14px; background: linear-gradient(to bottom, #d0e8e8 0%,#d7eaea 20%,#dceded 36%,#deeded 50%,#e3efef 64%,#edf7f7 80%,#ffffff 100%);}
+/* 2-ные заголовки таблиц */
+.htr2{background-color:#F4F7F7; color:#345A70; font-weight:bold; height:20px;}
+.str{background-color: #ffffff;} /* светлая полоса */
+.ttr{background-color: #F4F7F7;} 	/* тёмная полоса */
+.ftr{background-color: #e2e7e7;} /* нижняя часть */
+.CartFtr{background-color: #ffffff;} 	/* нижняя часть корзины */
+.CartTotal caption{text-align:left;font-weight:bold;}
+.CartTotal td{border-bottom:solid 1px #000000;} /* таблица внутри нижней части корзины */
+.cart_independ body{min-width:1%;}
+.alignCenter{text-align:center;}
+.alignRight{text-align:right;}
+
+.login_form, .forgot_password_form, .forgot_password_confirm{text-align:center;}
+.login_form table, .forgot_password_form table, .forgot_password_confirm table{margin:0 auto; text-align:center;}
+
+.red, .req{color:#ff0000;}
+
+.msg{padding:5px; margin-top:8px; margin-bottom:8px; border-radius:10px;}
+.msgHdr{font-size:17px; font-weight:bold;}
+.errMsg{color:#ff0000; border:solid 2px #ff0000;}
+.successMsg{border:solid 2px #009d00;}
+
+.authText{width:100px;}
+
+.main_categories{text-align:center;}
+.mainCatCell{width:200px; display:inline-block; text-align:left; margin-left:2px; margin-right:2px; margin-top:6px; margin-bottom:6px; padding:5px; vertical-align:top;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+.mainCatCell img{vertical-align:middle; margin-right:3px;}
+.mcRoot{font-size:17px; font-weight:bold;}
+.mcSub{font-size:13px;}
+
+.catProducts, .mainProducts, .mnfProducts, .searchProducts{clear:both; text-align:center;}
+.lstProduct{border:solid 1px #cccccc; display:block; margin-left:2px; margin-right:2px; margin-top:6px; margin-bottom:6px; padding:5px; vertical-align:top; font-size:14px; overflow:hidden; text-align:left;}
+.lstProduct:hover{overflow:auto;}
+.lstProduct h3{margin:0px; font-size:18px; text-align:left;}
+.prSmallImg{text-align:left; float:left; margin-right:8px;}
+.prSmallImg img{max-width:100%;}
+.price{font-weight:bold;}
+
+.pages_links{clear:both; margin-top:10px;}
+
+.catChainLnk, .prDtChainLnk{font-size:15px; font-weight:bold;}
+
+.subcategories{text-align:center;}
+.SubcatTitle{font-size:14px;}
+.SubCats{width:180px; display:inline-block; text-align:left; padding:1px; vertical-align:top;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+
+.category_image{float:right; margin:3px;}
+
+.frmSort{white-space:nowrap; overflow:auto;}
+
+.pages_links a{background-color:#D4e8e8; border-color:#808080; border-style:solid; border-width:1px; padding-left:3px; padding-right:3px; font-size:12px;}
+.pages_links a:hover{background-color:#C10000; color:#ffffff;}
+.PglPrev, .PglNext{background-color:transparent !important; border:0px !important; color:#327094 !important;}
+.PglPrev:before{content:'\2190'; margin-right:3px;}
+.PglNext:after{content:'\2192'; margin-left:3px;}
+
+.frmSearch{text-align:left; font-size:13px; margin:0px; display:inline-block;}
+.frmSearch input[type="submit"]{margin-left:2px;}
+.frmSearch input[type="checkbox"]{margin-left:0px; margin-right:2px; vertical-align:middle;}
+
+.mnfRowImg{float:right;margin-left:5px;margin-bottom:3px;}
+.mnfRowSep{margin-top:14px; margin-bottom:14px; padding-bottom:14px; border-bottom:2px ridge #cccccc; clear:both;}
+
+.mnfImg{float:right; margin-left:5px; margin-bottom:3px;}
+
+.newsSep{margin-bottom:22px;}
+.moreAllNews{margin-top:15px; margin-bottom:15px;}
+
+.frmOrderLogin table{text-align:center;}
+.selPayMethod{margin-bottom:10px;}
+.order_step2{max-width:550px;}
+.protectImg{vertical-align:middle; margin-left:3px;}
+
+.delivery_cost{text-decoration:underline;}
+.allContentList li{margin-bottom:9px; list-style-image:url(img/ls.gif);}
+
+/* Прайс-лист НАЧАЛО */
+.priceList body{background-color:#ffffff;}
+.priceHeader{width:100%;}
+.plhLeft{float:left; width:240px; padding:10px;}
+.plhCenter{margin:0 240px 0 240px; padding-top:10px;}
+.plhRight{float:right; width:240px; text-align:right; padding-top:10px;}
+.priceCat{background-color:#e2edf1; font-weight:bold;}
+.priceFooter{padding:16px; text-align:center;}
+/* Прайс-лист КОНЕЦ */
+
+
+.prDtSku{font-style:italic;}
+.prDtMainInfo, .frmPrDetail{display:inline-block; vertical-align:top; margin-right:8px;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+.prDtImg{overflow:auto; display:inline-block; max-width:100%;} /* для IE6,7 display:inline; float:left; или display:inline; zoom:1; */
+.prDtImg img{max-width:100%;}
+.prDtQuantity{font-style:italic;}
+.prGalImg{display:inline;max-height:104px;}
+.similar_products{margin-top:12px;}
+.similar_products h3{margin-left:8px; margin-bottom:8px;}
+.similarProduct{border:ridge 1px #cccccc; margin:1px; padding:1px; padding-top:3px; display:inline-block; vertical-align:top; text-align:center; width:240px; min-height:150px; max-height:300px; overflow:auto;} /* для IE6,7 задать фиксированную высоту + display:inline; float:left; или display:inline; zoom:1; */
+.similarProduct img{max-width:100%;}
+
+.mnfName h1{display:inline; margin-right:12px;}
+
+.product_comments{margin-top:12px;}
+.pComHdr{background-color:#eaf4f4; font-weight:bold; margin-top:12px;}
+.admin_reply .pComHdr{font-style:italic;}
+.cpdate{float:right;}
+.admin_reply{margin-left:50px;}
+#pmdiv{margin-top:12px;}
+
+.your_orders{margin:12px 0px 12px 0px;}
+.frmChangeProfile{max-width:550px;}
+
+.submitBl, .only_cart{margin-top:15px; margin-bottom:15px;}
+
+/* НАЧАЛО Товары в несколько столбцов везде */
+.lstProduct{
+display:inline-block;
+width:240px; /* ширина блока товара */
+height:300px; /* высота блока товара */
+}
+
+.pTitle{
+font-size:16px !important; /* размер шрифта названия товара */
+text-align:center !important; /* центровка названия товара */
+}
+
+.prSmallImg{
+float:none; /* отмена выравнивания изображения */
+margin:0px; /* внешний отступ изображения */
+text-align:center; /* центровка изображения */
+}
+/* КОНЕЦ Товары в несколько столбцов везде */

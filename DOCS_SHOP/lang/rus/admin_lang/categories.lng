@@ -1,0 +1,25 @@
+
+category = Раздел
+shop = Магазин
+edit_category = Редактировать раздел
+del_category = Удалить раздел
+move_all_products = Переместить все товары
+price = Цена
+edit = Редактировать
+delete = Удалить
+previous = Предыдущая
+next = Следующая
+delete_product = удалить этот товар
+sku = Артикул
+invisible_products = Невидимые товары
+no_invisproducts = Невидимых товаров не найдено
+order_by = Сортировать по
+by_date = Дате поступления
+by_udate = Дате обновления
+by_price = Цене
+by_title = Названию
+by_sku = Артикулу
+by_manufacturer = Производителю
+inverse_order = По убыванию
+direct_order = По возрастанию
+product_comments = Отзывы

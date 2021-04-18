@@ -1,0 +1,14 @@
+
+browse_images = Обзор изображений
+upload_new_img = Загрузить новое изображение
+upload = Загрузить/Удалить отмеченные
+file = Файл
+delete = Удалить
+delete_selected_files = Загрузить/Удалить отмеченные
+successfully_uploaded  = загружен
+
+allow_imgtypes = Допустимые форматы изображений:
+allow_expansions = Допустимые расширения файлов изображений:
+
+insert_image = Использовать это изображение
+

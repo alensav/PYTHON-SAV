@@ -1,0 +1,15 @@
+
+upload_error0 = 
+upload_error1 = Размер файла большой
+upload_error2 = Размер файла большой
+upload_error3 = Загружена только часть файла
+upload_error4 = Файл не загружен
+upload_error6 = Не задан временный каталог
+upload_error7 = Невозможна запись на диск
+invalid_filename = Некорректное имя файла
+valid_filename_chars = В именах загружаемых файлов можно использовать следующие символы: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.~_-"
+cannot_upload_file = Не удалось загрузить файл
+error_descript = Ошибка
+folder = Папка
+not_writable = недоступна для записи
+check_chmod = Для возможности загрузки файлов в эту папку установите на неё атрибуты 0777

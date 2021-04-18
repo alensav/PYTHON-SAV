@@ -1,0 +1,1 @@
+<a href="{relative_url}cart.php">{lang.cart} ({products_quantity})</a>

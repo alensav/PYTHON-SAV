@@ -1,0 +1,1 @@
+<nav class="horizontal_menu"><!--begin:horizontal_menu--><span><a href="{item_url}">{item_image}{item_title}</a> |</span> <!--end:horizontal_menu--></nav>

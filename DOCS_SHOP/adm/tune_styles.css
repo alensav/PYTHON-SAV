@@ -1,0 +1,185 @@
+body{
+min-width: 360px;
+}
+
+#toolbar{
+padding: 4px;
+vertical-align: top;
+}
+
+.readOnlyBlock{
+position: relative;
+z-index: -1;
+background: #999999;
+}
+
+.wait{
+cursor: wait;
+}
+
+.notWait{
+cursor: auto;
+}
+
+.normalBlock{
+position: inherit;
+z-index: auto;
+background: #inherit;
+cursor: auto;
+}
+
+#selectorsTexts{
+max-width: 300px;
+}
+
+#selectorsTextsBlock, #propertiesBlocks, #values_block{
+display: inline-block;
+width: 340px;
+border: 1px solid #cccccc;
+margin: 4px;
+padding: 4px;
+vertical-align: top;
+}
+
+#propertiesBlocks{
+display: none;
+}
+
+#selectorsTextsBlock select, #propertiesBlocks select, .propValues{
+display: block;
+max-width: 300px;
+}
+
+.propertiesBlock{
+display: none;
+}
+
+#values_block{
+display: none;
+}
+
+#prop_value{
+width: 300px;
+}
+
+#browser-prop-value{
+background-color: #dddddd;
+width: 300px;
+}
+
+#property_err{
+padding: 2px;
+color: #ff0000;
+}
+
+.clear{
+display: block;
+clear: both;
+}
+
+#value_tools{
+display: inline-block;
+margin-bottom: 2px;
+}
+
+#color_input{
+width: 54px;
+vertical-align: middle;
+}
+
+#sel_color_btn{
+display: inline-block;
+}
+
+.tool-btn{
+display: inline-block;
+width: 18px;
+height: 18px;
+border-top: 1px solid #dddddd;
+border-left: 1px solid #dddddd;
+border-right: 1px solid #333333;
+border-bottom: 1px solid #333333;
+border-radius: 2px;
+vertical-align: middle;
+background-color: #c8d8e6;
+text-align: center;
+cursor: pointer;
+}
+
+.tool-btn:hover{
+background-color: #e2f3ff;
+}
+
+.tool-btn:active{
+border-top: 1px solid #333333;
+border-left: 1px solid #333333;
+border-right: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+}
+
+.tool-btn img{
+width: 16px;
+height: 16px;
+margin: 1px;
+vertical-align: middle;
+}
+
+#properties-values{
+display: inline;
+}
+
+#properties-values select{
+display: none;
+margin-bottom: 2px;
+}
+
+.nowrap{
+white-space: nowrap;
+}
+
+#top-menu{
+display: inline;
+float: right;
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+#top-menu li{
+display: inline;
+margin: 0px;
+padding: 0px;
+white-space: nowrap;
+}
+
+#err_log{
+display: none;
+max-height: 70px;
+margin: 0px 3px 0px 3px;
+padding: 4px;
+border: 2px solid #ff0000;
+background: #ffeaea;
+color: #ff0000;
+overflow: auto;
+}
+
+#design{
+width: 99%;
+height: 500px;
+border: 2px solid #000000;
+margin-top:4px;
+}
+
+/* ≈сли высота окна меньше заданного значени€ */
+@media screen and (max-height: 500px) {
+ #design{
+ height: 300px;
+ }
+}
+
+/* ≈сли высота окна больше заданного значени€ */
+@media screen and (min-height: 800px) {
+ #design{
+ height: 600px;
+ }
+}

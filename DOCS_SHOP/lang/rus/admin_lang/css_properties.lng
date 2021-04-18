@@ -1,0 +1,76 @@
+
+color = Цвет текста
+
+background = Фон
+background-attachment = Прокручивание изображения фона
+background-color = Цвет фона
+background-image = Изображение фона
+background-origin = Позиционирование изображения фона
+background-position = Положение изображения фона
+background-repeat = Повторение изображения фона
+background-size = Размер изображения фона
+
+border = Рамка
+border-width = Толщина рамки
+border-style = Стиль рамки
+border-top = Рамка сверху
+border-left = Рамка слева
+border-right = Рамка справа
+border-bottom = Рамка снизу
+border-color = Цвет рамки
+border-top-width = Толщина верхней рамки
+border-left-width = Толщина левой рамки
+border-right-width = Толщина правой рамки
+border-bottom-width = Толщина нижней рамки
+border-top-style = Стиль верхней рамки
+border-left-style = Стиль левой рамки
+border-right-style = Стиль правой рамки
+border-bottom-style = Стиль нижней рамки
+border-top-color = Цвет верхней рамки
+border-left-color = Цвет левой рамки
+border-right-color = Цвет правой рамки
+border-bottom-color = Цвет нижней рамки
+
+border-radius = Закругление углов
+border-top-left-radius = Закругление верхнего левого угла
+border-top-right-radius = Закругление верхнего правого угла
+border-bottom-left-radius = Закругление нижнего левого угла
+border-bottom-right-radius = Закругление нижнего правого угла
+
+cursor = Курсор
+
+display = Отображение
+
+font-family = Шрифт
+font-size = Размер шрифта
+font-style = Стиль текста
+font-weight = Тощина символов текста
+
+height = Высота
+max-height = Максимальная высота
+max-width = Максимальная ширина
+
+margin = Внешний отступ
+margin-top = Внешний отступ сверху
+margin-left = Внешний отступ слева
+margin-right = Внешний отступ справа
+margin-bottom = Внешний отступ снизу
+
+min-height = Минимальная высота
+min-width = Минимальная ширина
+
+overflow = Полосы прокрутки
+
+padding = Внутренний отступ
+padding-top = Внутренний отступ сверху
+padding-left = Внутренний отступ слева
+padding-right = Внутренний отступ справа
+padding-bottom = Внутренний отступ снизу
+
+text-align = Выравнивание текста и изображений по горизонтали
+
+text-decoration = Декорация текста
+
+text-shadow = Тень от текста
+
+width = Ширина

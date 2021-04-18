@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /sort.php
+Disallow: /search.php
+Disallow: /pages.php
+Disallow: /help/

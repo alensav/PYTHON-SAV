@@ -1,0 +1,24 @@
+
+name = Название
+value = Значение
+submit = Сохранить изменения
+changes_success = Изменения сохранены
+all_pay_methods = Все способы оплаты
+robokassa_settings = Настройки ROBOKASSA
+general_settings = Настройки
+paysys_settings = Необходимые настройки в личном кабинете на сайте ROBOKASSA на странице &quot;Администрирование&quot;
+nosave_perms = В этом демонстрационном режиме Вы не можете сохранять изменения и выполнять некоторые действия!
+version_required = Для работы этого модуля требуется версия ArwShop Market 2.1 или выше
+login = Логин (идентификатор магазина)
+pass1 = Пароль #1
+pass1_desc = установите пароль на сайте ROBOKASSA и на этой странице
+pass2 = Пароль #2
+pass2_desc = установите пароль на сайте ROBOKASSA и на этой странице
+result_method = Метод отсылки данных по Result URL
+success_method = Метод отсылки данных по Success URL
+fail_method = Метод отсылки данных по Fail URL
+lang = Язык интерфейса для покупателя
+server = Сервер ROBOKASSA, используемый для оплаты
+test_server = Тестовый
+work_server = Рабочий
+no_pm_info = Дополнительная информация отсутствует

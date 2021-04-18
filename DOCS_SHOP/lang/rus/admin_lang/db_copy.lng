@@ -1,0 +1,13 @@
+
+do_reserve_copy = Сделать резервную копию
+begin_copy = Сделать резервную копию
+not_zlib_loaded = Сжатие невозможно, т.к. расширение zlib для PHP отключено
+cant_open_file = Не удалось произвести запись в файл
+check_folder_chmod = Установите, пожалуйста, атрибуты (chmod)
+on_the_folder = на папку
+gzip_compress = Cжатие gzip
+backup_success = Резервная копия создана
+delete_this_file = удалить этот файл
+file_deleted = Файл удалён
+download_file = Скачать файл
+no_files = Файлов не найдено

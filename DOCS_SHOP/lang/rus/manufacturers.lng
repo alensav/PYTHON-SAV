@@ -1,0 +1,15 @@
+
+previous = Предыдущая
+next = Следующая
+order_by = Сортировать по
+by_date = Дате поступления
+by_udate = Дате обновления
+by_price = Цене
+by_title = Названию
+by_sku = Артикулу
+by_category = Разделу
+inverse_order = По убыванию
+direct_order = По возрастанию
+go_sort = Сортировать
+visit_site = Открыть сайт
+show_all = показать все

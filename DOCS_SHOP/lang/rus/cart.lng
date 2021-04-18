@@ -1,0 +1,17 @@
+
+not_cookie = Для корректной работы необходимо включить поддержку cookies в браузере
+product_name = Наименование
+cost = Стоимость
+quantity = Количество
+total_cost = Суммарная стоимость
+recalculate = Пересчитать
+delete = Удалить
+want_del_product = Удалить этот товар из корзины?
+many_quantity = Нельзя добавить в корзину товаров больше чем имеется в наличии!
+discount = Скидка
+total_with_discount = Итого с учётом скидки
+
+cart = Корзина
+price = Цена
+process_order = Оформить заказ
+empty_cart = Ваша корзина пуста

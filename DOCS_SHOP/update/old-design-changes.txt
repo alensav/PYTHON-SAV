@@ -1,0 +1,552 @@
+ОПИСАНИЕ ПРОГРАММНО-КОНСТРУКТИВНЫХ ДОПОЛНЕНИЙ СТАРЫХ ШАБЛОНОВ ДИЗАЙНА (seawave, autumn, steelblue) ДО ВЕРСИИ ArwShop Market 3.0.
+
+Старый дизайн можно скачать здесь: http://www.arwshop.ru/downloads/old-design.zip
+
+------------------------------
+
+Версия продукта: 1.1.52
+Файлы: cart_independ.tpl и empty_cart_independ.tpl
+для возможности открывать корзину в отдельном окне добавлены файлы дизайна cart_independ.tpl и empty_cart_independ.tpl
+Чтобы открывать корзину в отдельном окне показывая только контент корзины без дизайна движка, в GET и POST запросах нужно использовать
+дополнительный параметр independ со значением 1, например:
+/cart.php?independ=1
+
+Пример формы добавления товара в корзину (открывается в отдельном окошке):
+
+<form name="addfrm" action="{relative_url}cart.php?independ=1" method="POST" style="margin:0px" target="iwincart" onsubmit="window.open('','iwincart','scrollbars,width=600,height=300')">
+<input type="hidden" name="act" value="add">
+<input type="hidden" name="product" value="{product_id}">
+<input type="hidden" name="independ" value="1">
+<input type="submit" value="{lang.add_to_cart}">
+<input type="text" name="product_quantity" value="1" size="4">
+</form>
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: profile.tpl
+Добавлено поле "Старый пароль", Изменены имена CSS классов в нижних полях (str, ttr). Код:
+ <tr class="ttr">
+  <td align="right">
+  {lang.old_password}&nbsp;
+  </td>
+  <td>
+  <input type="password" name="old_password" size="40" maxlength="255">
+  </td>
+ </tr>
+
+Добавлена ссылка на страницу с описанием скидок, а также для возможности не отображать нулевую скидку. Для этого код:
+
+<b>{lang.group} {groupname} ({lang.discount_at_the_purchase} {group_discount} %)</b><br>{group_descript}<br><br>
+
+изменён на
+
+<b>{lang.group} {groupname}</b>
+<!--if:group_discount-->({lang.discount_at_the_purchase} {group_discount} %)<br>
+ <!--if:pub_group_discounts-->
+ <a href="{group_discounts_url}">{lang.about_discounts}</a><br>
+ <!--/if:pub_group_discounts-->
+<!--/if:group_discount--><br>
+
+{group_descript}
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: category.tpl
+Для возможности расширенного форматирования кода подразделов, код
+
+<center>
+{subcategories}
+</center>
+
+заменён следующим кодом:
+
+<!--if:subcategories_exists-->
+<center><table class="SubcatTbl"><caption>{lang.subcategories}</caption>
+ <tr><td width="20">&nbsp;</td><td valign="top"><span class="sclc">
+  <!--begin:subcategories-->
+  <p><a href="{category_url}">{category_title}<!--if:show_quantity-->&nbsp;({category_products_count})<!--/if:show_quantity--></a></p>
+  <!--if:cycle={quantitycat_incolumn}-->
+  </span></td><td width="20">&nbsp;</td><td valign="top"><span class="sclc">
+  <!--/if:cycle={quantitycat_incolumn}-->
+  <!--end:subcategories-->
+  </span></td>
+ </tr>
+</table></center>
+<!--/if:subcategories_exists-->
+
+изменена форма sortfrm
+и перемещена выше метки <!--if:products--> чтобы осуществлять просмотр товаров из определённого раздела каталога товаров выборочно по определённому производителю.
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: price.tpl
+
+Для возможности выбора валюты посетителями в прайс-листе добавлен следующий код:
+
+  <td>
+<!--if:currency_selection-->
+<form name="frmSelCurrency" action="{relative_url}pages.php" method="GET" style="margin:0px; text-align:right;">
+<input type="hidden" name="view" value="sel_currency">
+<nobr>{lang.select_currency}&nbsp;</nobr><select name="currency_id" onchange="frmSelCurrency.submit();">{sel_currencies_options}</select>
+<input type="hidden" name="independ" value="1">
+<input type="hidden" name="redir" value="{request_uri_encoded}">
+<noscript><input type="image" src="{design_url}img/ok.gif" alt="{lang.select_currency}"></noscript>
+</form>
+<!--/if:currency_selection-->
+  </td>
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: orderinfo_tbl.tpl
+
+В связи с изменением отображения цен в валюте заказа, метки {def_currency_brief} заменены на {currency_brief}
+
+А также удалён следующий код:
+
+<!--if:not_def_currency-->
+ <tr>
+  <td valign="top">{lang.selected_currency_course}:</td>
+  <td>
+  &nbsp;1 {currency_brief} = {currency_course} {def_currency_brief}<br>
+  &nbsp;1 {def_currency_brief} = {def_currency_course} {currency_brief}
+  </td>
+ </tr>
+<!--/if:not_def_currency-->
+
+Удалён код:
+
+ <tr>
+  <td valign="top">{lang.total_with_delivery}:</td><td>{total_with_delivery} {currency_brief}</td>
+ </tr>
+
+Добавлен код, выводящий на этой странице название способа оплаты и название способа доставки:
+
+ <tr>
+  <td>{lang.pay_method}:</td>
+  <td>&nbsp;{pay_method}</td>
+ </tr>
+ <tr>
+  <td valign="top">{lang.delivery_method}:</td><td>{delivery_method}</td>
+ </tr>
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: group_discounts.tpl
+В связи с добавлением страницы для публикации скидок для текущей группы пользователя добавлен файл дизайна group_discounts.tpl
+
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: discounts.tpl
+В связи с добавлением страницы для публикации скидок для всех групп пользователей добавлен файл дизайна discounts.tpl
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: product_detail.tpl
+Для возможности показа количества товаров в свободном текстовом виде, код
+
+<i>{product_quantity}</i><br><br>
+
+изменён на
+
+<i><!--if:not_quantity_txt-->{product_quantity}<!--/if:not_quantity_txt--><!--if:quantity_txt-->{quantity_txt}<!--/if:quantity_txt--></i><br><br>
+
+Для возможности показывать похожие товары добавлен следующий код:
+
+<!--if:similar_products-->
+<p align="center" style="font-size:16px;margin-top:0px;">
+<strong>{lang.similar_products}:</strong><br><br>
+<table cellspacing="0" cellpadding="0" style="padding-right:12px;">
+ <tr>
+ <!--begin:similar_products-->
+  <td valign="bottom" align="center">
+  <!--if:similar_small_image-->{similar_small_image}<br><!--/if:similar_small_image-->
+  <a href="{similar_url}">{similar_title}</a><br>
+  <strong>{lang.price}: {similar_price} {currency_brief}</strong><br><br>
+  </td>
+ <!--if:cycle=2-->
+ </tr>
+ <tr>
+ <!--/if:cycle=2-->
+ <!--end:similar_products-->
+ <td colspan="40" style="display:none;"></td>
+ </tr>
+</table>
+</p>
+<!--/if:similar_products-->
+
+
+Для добавления и публикации комментариев покупателей добавлена метка {product_comments},
+добавлены файлы дизайна product_comments.tpl и product_comment_form.tpl,
+в файл стилей styles.css добавлен следующий код:
+.pComHdr{
+background-color: #EAF4F4;
+}
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файлы: product_comments.tpl и product_comment_form.tpl
+Для добавления и публикации комментариев покупателей добавлены файлы дизайна product_comments.tpl и product_comment_form.tpl.
+В папку имя-дизайна/img добавлены изображения plus.gif и minus.gif.
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: manufacturers.tpl
+В связи с добавлением отдельной страницы со списком всех производителей добавлен файл дизайна manufacturers.tpl
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: menu_manufacturers.tpl
+Для размещения ссылки на отдельную страницу со списком всех производителей
+код
+
+{lang.manufacturers}
+
+изменён на
+
+<a href="{manufacturers_url}">{lang.manufacturers}</a>
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: main.tpl
+Для возможности отображения разделов с подразделами в центре главной страницы добавлен следующий код:
+
+<!--if:main_categories-->
+<p align="center"><table>
+<tr>
+<td></td>
+<!--begin:categories-->
+<td valign="top" align="right" class="mc">{main_image}</td>
+<td valign="top"><a href="{category_url}" class="mc">{category_title}</a>
+ <!--if:subcategories-->
+ <br><span class="msc">
+ <!--begin:subcategories-->{submain_image}<a href="{subcategory_url}">{subcategory_title}</a>, <!--end:subcategories-->
+ <a href="{category_url}">&#133;</a></span><br>
+ <!--/if:subcategories--><br>
+</td>
+<td width="20">&nbsp;</td><!--if:cycle={maincat_qcolumns}--></tr><tr><td></td><!--/if:cycle={maincat_qcolumns}-->
+<!--end:categories-->
+</tr>
+</table></p>
+<!--/if:main_categories-->
+
+В файл стилей styles.css добавлен следующий код:
+
+/* НАЧАЛО разделы на главной странице */
+a:link.mc{font-size:16px; text-decoration:underline; font-weight: bold;}
+a:visited.mc{font-size:16px; text-decoration:underline; font-weight: bold;}
+a:hover.mc{font-size:16px; text-decoration:none; font-weight: bold;}
+a:active.mc{font-size:16px; text-decoration:none; font-weight: bold;}
+
+.mc img{
+border: none;
+}
+
+span.msc a:link{font-size:12px; text-decoration:none;}
+span.msc a:visited{font-size:12px; text-decoration:none;}
+span.msc a:hover{font-size:12px; text-decoration:underline;}
+span.msc a:active{font-size:12px; text-decoration:underline;}
+
+.msc img{
+border: none;
+vertical-align: middle;
+}
+/* КОНЕЦ разделы на главной странице */
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: menu_categories.tpl
+Для расширения возможностей вертикального меню разделов каталога товаров,  код
+
+   <table cellspacing="0" cellpadding="0" class="MnuCat">
+    <!--begin:menu_categories-->
+    <tr><td>{category_link}</td></tr>
+    <!--end:menu_categories-->
+   </table>
+
+заменён следующим кодом:
+
+   <table cellspacing="0" cellpadding="0" class="MnuCat3">
+    <!--begin:menu_categories-->
+    <tr>
+     <td width="1%" class="ec1">{menu_image}</td>
+     <td class="ec1">
+     <a href="{category_url}">{category_title}</a>
+          
+          <table cellspacing="0" cellpadding="0">
+          <!--begin:subcategories-->
+          <tr><td width="1%" class="mcl">{submenu_image}</td><td><a href="{subcategory_url}">{subcategory_title}</a>
+          
+              <table cellspacing="0" cellpadding="0">
+              {recursion_cycle}
+              <tr style="display:none"><td></td><td></td></tr>
+              </table>
+              
+          </td></tr>
+          <!--end:subcategories-->
+          </table>
+     
+     </td>
+    </tr>
+    <!--end:menu_categories-->
+   </table>
+
+В файл стилей styles.css добавлен следующий код:
+
+/* BEGIN блок верт. меню разделов каталога товаров */
+
+.MnuCat3{width: 100%;}
+
+/* ссылки */
+.MnuCat3 td a{
+display: block;
+text-decoration: none;
+padding: 4px;
+}
+
+/* ссылки при наведении мышью */
+.MnuCat3 td a:hover{
+background-color: #f8fafa;
+text-decoration: underline;
+}
+
+/* изображения */
+.MnuCat3 img{
+border: none;
+margin-top: 5px;
+margin-right: 0px;
+}
+
+.ec1{
+vertical-align: top;
+border-bottom: 1px dashed #cccccc;
+}
+
+.ec1 img{
+margin-left: 2px;
+padding-top: 2px;
+}
+
+.mcl{
+margin-left: 12px;
+padding-left: 12px;
+vertical-align: top;
+}
+
+/* END блок верт. меню разделов каталога товаров */
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: menu_new_products.tpl
+Для возможности отображения маленьких изображений в вертикальном блоке новых товаров
+В цикле между метками <!--begin:new_products--> и <!--end:new_products--> добавлен следующий код:
+
+<!--if:small_image--><div>{small_image}</div><!--/if:small_image-->
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: menu_special_offers.tpl
+В связи с добавлением вертикального блока "Спецпредложения" добавлен файл дизайна menu_special_offers.tpl,
+в файл дизайна design.tpl добавлена метка {menu_special_offers},
+в файле styles.css к классу NewProdTbl присоединён класс SpecialTbl,
+в дизайне seawave добавлен файл изображения vm-special.gif
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: order_complete.tpl
+Добавлена возможность использовать несколько платежных бланков для одного способа оплаты.
+В связи с этим код
+
+<!--if:payment_blank-->
+<br><b><a href="pages.php?view=payment_blank&independ=1" target="_blank">{lang.view_payment_blank}</a></b>
+<!--/if:payment_blank-->
+
+изменён на
+
+<!--if:payment_blank-->
+<br><b>{lang.view_payment_blank}:</b><br>
+ <!--begin:payment_blanks-->
+ <b><a href="{blank_url}" target="_blank">{blank_title}</a></b><br>
+ <!--end:payment_blanks-->
+<!--/if:payment_blank-->
+
+Добавлено дополнительное описание, которое показывается покупателю только после оформления заказа.
+В связи с этим добавлен код
+
+<!--if:adv_descript-->
+<p>{adv_descript}</p>
+<!--/if:adv_descript-->
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: order_detail.tpl
+Чтобы пользователь при просмотре детальной информации заказа в своём профиле мог получить ссылки на платежные бланки, добавлен следующий код:
+
+<!--if:payment_blank-->
+<b>{lang.view_payment_blank}:</b><br>
+ <!--begin:payment_blanks-->
+ <b><a href="{blank_url}" target="_blank">{blank_title}</a></b><br>
+ <!--end:payment_blanks-->
+<br>
+<!--/if:payment_blank-->
+
+Добавлено дополнительное описание, которое показывается покупателю только после оформления заказа и в истории его заказов.
+В связи с этим добавлен код
+
+<!--if:adv_descript-->
+<p>{adv_descript}</p>
+<!--/if:adv_descript-->
+
+В связи с изменением отображения цен в валюте заказа, метки {def_currency_brief} заменены на {currency_brief}
+
+А также удалён лишний код:
+
+ <!--if:not_def_currency-->
+ <tr>
+  <td>{lang.selected_currency_course}:<br><font style="font-size:10px">({lang.to_the_default_currency})</font></td>
+  <td>
+  &nbsp;&nbsp;&nbsp;1 {currency_brief} = {currency_course} {def_currency_brief}<br>
+  &nbsp;&nbsp;&nbsp;1 {def_currency_brief} = {def_currency_course} {currency_brief}
+  </td>
+ </tr>
+ <!--/if:not_def_currency-->
+ 
+Также удалён лишний код:
+
+ <tr>
+  <td>{lang.total_with_delivery}:</td>
+  <td>&nbsp;&nbsp;&nbsp;{total_with_delivery} {def_currency_brief}</td>
+ </tr>
+
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: vertical_menu.tpl
+Добавлен шаблон блока дополнительного вертикального меню vertical_menu.tpl
+
+------------------------------
+
+Версия продукта: 2.0.0
+Файл: design.tpl
+Для возможности выбора валюты посетителями в каталоге товаров добавлен следующий код:
+
+<!--if:currency_selection-->
+<form name="frmSelCurrency" action="{relative_url}pages.php" method="GET" style="margin:0px; text-align:right;">
+<input type="hidden" name="view" value="sel_currency">
+<nobr>{lang.select_currency}&nbsp;</nobr><select name="currency_id" onchange="frmSelCurrency.submit();">{sel_currencies_options}</select>
+<input type="hidden" name="independ" value="1">
+<input type="hidden" name="redir" value="{request_uri_encoded}">
+<noscript><input type="image" src="{design_url}img/ok.gif" alt="{lang.select_currency}"></noscript>
+</form>
+<!--/if:currency_selection-->
+
+В связи с добавлением вертикального блока "Спецпредложения"
+добавлена метка {menu_special_offers}
+
+Для отображения блока дополнительного вертикального меню добавлена метка {vertical_menu}
+
+------------------------------
+
+Версия продукта: 2.1.8
+Файл: product_detail.tpl
+Для изначальной центровки посередине экрана открываемого окна с большим изображением товара со страницы подробного описания товара, код
+
+<script type="text/javascript">
+function showimg(img){
+window.open ('{relative_url}viewimg.php?img='+img, '', 'resizable,scrollbars,width=300,height=300');
+}
+</script>
+
+изменён на
+
+<script type="text/javascript">
+function showimg(img){
+var wwidth=300;
+var wheight=300;
+window.open('{relative_url}viewimg.php?img='+img, '', 'resizable,scrollbars,width='+wwidth+',height='+wheight+',left='+(screen.width/2-wwidth/2)+',top='+(screen.height/2-wheight/2));
+}
+</script>
+
+Описанное выше изменение скрипта JavaScript вносить не обязательно.
+
+=================================================================================
+
+Версия продукта: 2.2.0
+Файл: register.tpl
+Чтобы пользователи могли самостоятельно выбирать группу во время регистрации (если разрешено настройками в панели администрирования) в форму регистрации добавлен следующий код:
+
+<!--if:reg_allow_groups-->
+<table cellspacing="0" cellpadding="0" width="100%" border="0" class="coltbl">
+ <tr class="htr">
+  <td colspan="4">{lang.user_group}</td>
+ </tr>
+ <!--begin:user_groups-->
+ <tr class="{def_class}">
+  <td width="1%"><input type="radio" name="user_group" value="{def_groupid}"{group_checked}></td>
+  <td>{groupname}</td>
+  <td>&nbsp;</td>
+  <td>{group_description}</td>
+ </tr>
+ <!--end:user_groups-->
+</table><br>
+<!--/if:reg_allow_groups-->
+
+
+
+------------------------------
+
+Версия продукта: 2.2.0
+Файл: menu_news.tpl
+В цикл menu_news добавлена метка {menu_text}, чтобы показывать текст новости для меню в вертикальном блоке меню новостей.
+В дизайне "Стальная синева" в файл стилей styles.css добавлен код:
+.vMenuTbl td, .vMenuTbl div{
+color: #FFFFFF;
+}
+
+=================================================================================
+
+Версия продукта: 2.3.0
+Файл: cart_independ2.tpl
+С добавлением в настройках разных вариантов открытия корзины добавлен файл cart_independ2.tpl
+
+------------------------------
+
+Версия продукта: 2.3.0
+Файлы: cart_independ.tpl и empty_cart_independ.tpl
+С добавлением в настройках разных вариантов открытия корзины, в тег <body> добавлено событие
+onload="opener.wpcOnload();"
+
+=================================================================================
+
+Версия продукта: 3.0.0
+Файл: order_detail.tpl
+(шаблон страницы с подробной информацией о заказе в личном кабинете пользователя)
+Добавлен код ссылки для оплаты заказа (ссылка показывается если для способа оплаты используется платежный модуль):
+<!--if:payment_link-->
+<div class="payment_link"><a href="{payment_link}">{lang.pay_this_order}</a></div><br>
+<!--/if:payment_link-->
+
+=================================================================================
+
+* В этом описании примеры изменения стилей даны для дизайна seawave и в разных вариантах дизайна могут иметь некоторые отличия. Индивидуальный добавленный или изменённый код (если таковой имеется) для каждого варианта дизайна можно посмотреть открыв соответствующий файл дизайна в папке соответствующего варианта дизайна.
+
+Если Вы не изменяли вышеперечисленные файлы-шаблоны дизайна, достаточно их просто заменить/добавить новые.
+
+Подробнее, за какие функции отвечает определённый шаблон и его описание можно прочитать в файлах помощи в разделе "Изменение дизайна" (файл help.html в корне или файл index.html в папке help).

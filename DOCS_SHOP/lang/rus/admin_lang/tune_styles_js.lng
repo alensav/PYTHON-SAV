@@ -1,0 +1,8 @@
+
+bad_browser = Произошла ошибка. Возможно, эта версия браузера не поддерживается.
+browser_cleared_value = Браузер или пользователь очистил значение.
+unknown_in_browser = не опознано этим браузером
+css_link_error = Не удалось получить CSS stylesheet link, имеющий id
+replace_css_file = Подтвердите замену файла CSS стилей
+view_logo_after_save = Логотип будет отображаться после сохранения изменений
+color_select = Выберите цвет

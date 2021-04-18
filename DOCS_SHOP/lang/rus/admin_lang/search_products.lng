@@ -1,0 +1,21 @@
+
+search_products = Поиск товаров
+search = Найти
+by_title = по названию
+by_sku = по артикулу
+by_id = по ID товара
+not_search_by = Не выбран вариант поиска
+not_search_value = Не задано значение для поиска
+product = Товар
+not_found = Ничего не найдено
+shows_first = Показаны первые
+search_results = найденных товаров
+s_results = Результаты поиска
+manufacturer = Производитель
+all_manufacturers = Все
+sku = Артикул
+price = Цена
+edit = Редактировать
+product_comments = Отзывы
+delete = Удалить
+delete_product = удалить этот товар

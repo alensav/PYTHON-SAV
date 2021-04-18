@@ -1,0 +1,12 @@
+
+price_list = Прайс-лист
+on_main_page = На главную
+category = Раздел
+product_title = Наименование
+product_sku = Артикул
+product_price = Цена
+price_with_discount = Цена со скидкой
+product_quantity = В наличии
+print = Печать
+select_currency = Валюта
+unlim = Много

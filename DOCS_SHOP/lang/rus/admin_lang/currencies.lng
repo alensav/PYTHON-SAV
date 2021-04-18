@@ -1,0 +1,16 @@
+
+currency_name = Название валюты
+short_denotation = Краткое обозначение
+currency_course = Курс по отношению к валюте базы данных
+def_currency = Валюта базы данных
+add_currency = Добавить валюту
+delete = Удалить
+choose_def_currency = Выберите, пожалуйста, валюту базы данных!
+fill_all_fields = Заполните, пожалуйста, поля "Название валюты" и "Краткое обозначение"!
+currency_added = Валюта добавлена
+currency_deleted = Валюта удалена
+delete_currency = удалить эту валюту
+enabled = Доступна
+disabled_currency_cant_def = Нельзя назначить валютой базы данных, валюту, которая недоступна в магазине!
+nodelete_def_currency = Нельзя удалить валюту базы данных!
+nodelete_only_currency = Нельзя удалить единственную доступную валюту!

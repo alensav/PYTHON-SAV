@@ -1,0 +1,59 @@
+[21-Dec-2020 18:25:01 Europe/Moscow] DB MySQL error: Table 'u1242627_bd2.arwm_item_categories' doesn't exist
+Last SQL query: "SELECT COUNT(*) FROM arwm_item_categories, arwm_items WHERE arwm_item_categories.catid = 12 AND arwm_items.itemid = arwm_item_categories.itemid AND arwm_items.visible = 1"<br>SQL query count: 10<br>Request: /admin.php?view=cts&cat=12<br>Query string: view=cts&cat=12<br>Referer: http://docsproekt.shop/admin.php?view=cts<br>Method: GET<br>#0 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/view_cat.php, line => 58, function => error, class => db, type => ->)
+#1 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/pages/categories_p.php, line => 49, function => get_cat_products, class => view_category, type => ->)
+#2 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/pages/main_p.php, line => 35, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/pages/categories_p.php)function => include)
+#3 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/pages/independ_p.php, line => 93, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/pages/main_p.php)function => include)
+#4 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/pages/admin_p.php, line => 35, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/pages/independ_p.php)function => include)
+#5 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/admin.php, line => 136, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/admin/pages/admin_p.php)function => include)
+
+---
+[21-Dec-2020 19:35:04 Europe/Moscow] DB MySQL error: Table 'u1242627_bd2.arwm_item_categories' doesn't exist
+Last SQL query: "SELECT arwm_items.mnf_id FROM arwm_item_categories, arwm_items WHERE arwm_item_categories.catid = 1 AND arwm_items.itemid = arwm_item_categories.itemid AND arwm_items.visible = 1 "<br>SQL query count: 12<br>Request: /catalog/%D0%92%D0%BE%D0%B4%D0%BE%D1%81%D0%BD%D0%B0%D0%B1%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5/<br>Query string: fcat=catalog/Водоснабжение<br>Referer: http://docsproekt.shop/<br>Method: GET<br>#0 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 40, function => error, class => db, type => ->)
+#1 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 8, function => get_products, args => Array(0 => 1))
+#2 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php, line => 19, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php)function => include)
+#3 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/template.php, line => 24, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php)function => include)
+#4 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 241, function => include_in_var, class => template, type => ->, args => Array(0 => ./inc/pages/shop_p.php))
+#5 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 526, function => load_design)
+#6 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 129, function => get_content)
+
+---
+[21-Dec-2020 19:35:19 Europe/Moscow] DB MySQL error: Table 'u1242627_bd2.arwm_item_categories' doesn't exist
+Last SQL query: "SELECT arwm_items.mnf_id FROM arwm_item_categories, arwm_items WHERE arwm_item_categories.catid = 10 AND arwm_items.itemid = arwm_item_categories.itemid AND arwm_items.visible = 1 "<br>SQL query count: 12<br>Request: /catalog/Proekti-na-proizvodstvennie-obekti/<br>Query string: fcat=catalog/Proekti-na-proizvodstvennie-obekti<br>Referer: http://docsproekt.shop/<br>Method: GET<br>#0 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 40, function => error, class => db, type => ->)
+#1 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 8, function => get_products, args => Array(0 => 10))
+#2 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php, line => 19, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php)function => include)
+#3 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/template.php, line => 24, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php)function => include)
+#4 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 241, function => include_in_var, class => template, type => ->, args => Array(0 => ./inc/pages/shop_p.php))
+#5 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 526, function => load_design)
+#6 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 129, function => get_content)
+
+---
+[21-Dec-2020 19:36:57 Europe/Moscow] DB MySQL error: Table 'u1242627_bd2.arwm_item_categories' doesn't exist
+Last SQL query: "SELECT arwm_items.mnf_id FROM arwm_item_categories, arwm_items WHERE arwm_item_categories.catid = 10 AND arwm_items.itemid = arwm_item_categories.itemid AND arwm_items.visible = 1 "<br>SQL query count: 12<br>Request: /catalog/Proekti-na-proizvodstvennie-obekti/<br>Query string: fcat=catalog/Proekti-na-proizvodstvennie-obekti<br>Referer: http://docsproekt.shop/catalog/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B%20%D0%B2%D0%BE%D0%B4%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/Proekt-kanalizatsionnoj-nasosnoj-stantsii.html<br>Method: GET<br>#0 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 40, function => error, class => db, type => ->)
+#1 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 8, function => get_products, args => Array(0 => 10))
+#2 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php, line => 19, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php)function => include)
+#3 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/template.php, line => 24, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php)function => include)
+#4 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 241, function => include_in_var, class => template, type => ->, args => Array(0 => ./inc/pages/shop_p.php))
+#5 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 526, function => load_design)
+#6 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 129, function => get_content)
+
+---
+[21-Dec-2020 19:37:44 Europe/Moscow] DB MySQL error: Table 'u1242627_bd2.arwm_item_categories' doesn't exist
+Last SQL query: "SELECT arwm_items.mnf_id FROM arwm_item_categories, arwm_items WHERE arwm_item_categories.catid = 14 AND arwm_items.itemid = arwm_item_categories.itemid AND arwm_items.visible = 1 "<br>SQL query count: 12<br>Request: /catalog/POLNIJ-DOSTUP-K-ARHIVU-PROEKTOV/<br>Query string: fcat=catalog/POLNIJ-DOSTUP-K-ARHIVU-PROEKTOV<br>Referer: http://docsproekt.shop/pages.php?view=order<br>Method: GET<br>#0 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 40, function => error, class => db, type => ->)
+#1 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 8, function => get_products, args => Array(0 => 14))
+#2 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php, line => 19, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php)function => include)
+#3 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/template.php, line => 24, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php)function => include)
+#4 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 241, function => include_in_var, class => template, type => ->, args => Array(0 => ./inc/pages/shop_p.php))
+#5 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 526, function => load_design)
+#6 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 129, function => get_content)
+
+---
+[21-Dec-2020 21:30:34 Europe/Moscow] DB MySQL error: Table 'u1242627_bd2.arwm_item_categories' doesn't exist
+Last SQL query: "SELECT arwm_items.mnf_id FROM arwm_item_categories, arwm_items WHERE arwm_item_categories.catid = 3 AND arwm_items.itemid = arwm_item_categories.itemid AND arwm_items.visible = 1 "<br>SQL query count: 13<br>Request: /catalog/Proekti-avtomobilnih-dorog/<br>Query string: fcat=catalog/Proekti-avtomobilnih-dorog<br>Referer: http://docsproekt.shop/pages.php?view=order<br>Method: GET<br>#0 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 40, function => error, class => db, type => ->)
+#1 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php, line => 8, function => get_products, args => Array(0 => 3))
+#2 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php, line => 19, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/category_p.php)function => include)
+#3 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/inc/template.php, line => 24, args => Array(0 => /var/www/u1242627/data/www/docsproekt.shop/inc/pages/shop_p.php)function => include)
+#4 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 241, function => include_in_var, class => template, type => ->, args => Array(0 => ./inc/pages/shop_p.php))
+#5 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 526, function => load_design)
+#6 => Array(file => /var/www/u1242627/data/www/docsproekt.shop/index.php, line => 129, function => get_content)
+
+---

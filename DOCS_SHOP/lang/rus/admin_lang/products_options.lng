@@ -1,0 +1,14 @@
+
+add_products_option = Добавить свойство
+option_name = Название свойства
+possible_values = Возможные значения
+delete = Удалить
+delete_option = удалить свойство
+view_change = Посмотреть/изменить
+sort_index = Порядок сортировки
+all_products_options = Все свойства товаров
+no_option_name = Необходимо задать название свойства!
+edit_products_option = Изменение свойства
+value = Значение
+delete_value = удалить значение
+add_value = Добавить значение

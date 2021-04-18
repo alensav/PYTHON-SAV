@@ -1,0 +1,1038 @@
+html{
+height: 100%;
+}
+
+body{
+min-height: 100%;
+position: relative;
+min-width: 320px;
+}
+
+* html body{
+height: 100%;
+}
+
+/* *{margin: 0px; padding: 0px;} */
+body, ul{
+margin: 0px;
+padding: 0px;
+}
+
+/* Центральная часть страницы */
+.central{
+margin-top: 6px;
+padding-bottom: 200px;
+overflow: hidden;
+}
+
+/* HTML5 теги для старых версий браузеров */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section{
+display: block;
+}
+
+img{
+border: 0px;
+}
+
+h1, h2 {
+margin-top: 5px;
+margin-bottom: 8px;
+}
+
+input[type='submit']:hover, button:hover{
+opacity: 0.8;
+}
+
+input[type='checkbox']{
+margin-right: 3px;
+vertical-align: middle;
+}
+
+ul, ol{
+margin-left: 20px;
+}
+
+p{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+/* Верхняя часть ("Шапка") */
+.header{
+width: 100%;
+min-width: 320px;
+overflow: hidden;
+vertical-align: top;
+padding-top: 5px;
+}
+
+.hdrLeft{
+display: block;
+float: left;
+vertical-align: top;
+width: 300px;
+padding-top: 3px;
+padding-bottom: 3px;
+overflow: hidden;
+}
+
+/* Изображение логотипа (тег img) */
+#logo_image{
+max-width: 280px;
+}
+
+.hdrRight{
+display: block;
+margin-left: 300px;
+}
+
+.hdrRightBottom{
+padding-bottom: 3px;
+}
+
+.frmSearch{
+display: block;
+text-align: center;
+font-size: 13px;
+margin-left: 2px;
+margin-right: 180px;
+vertical-align: bottom;
+z-index: 200;
+white-space: nowrap;
+}
+
+.frmSearch input[type='search']{
+width: 65%;
+vertical-align: middle;
+}
+
+.frmSearch input[type='checkbox']{
+margin-left: 0px;
+margin-right: 2px;
+vertical-align: middle;
+}
+
+.frmSearch input[type='submit']{
+width: 22px;
+height: 22px;
+margin: 2px;
+padding: 0px;
+border-width: 1px;
+vertical-align: middle;
+background: url('img/search.png') no-repeat scroll 1px 1px;
+}
+
+.frmSearch input[type='submit']:hover{
+opacity: 0.7;
+}
+
+.searchSettings{
+display: inline-block;
+text-align: right;
+}
+
+
+.searchSettingsButton img{
+width: 14px;
+height: 14px;
+vertical-align: middle;
+cursor: pointer;
+}
+
+.searchSettingsBody{
+position: absolute;
+display: none;
+padding: 4px;
+border: 1px solid #bbbbbb;
+border-radius: 3px;
+background: #ffffff;
+color: #000000;
+}
+
+.searchSettings:hover .searchSettingsBody{
+display: block;
+}
+
+.cart_info{
+display: block;
+float: right;
+width: 180px;
+font-size: 15px;
+font-weight: bold;
+text-align: right;
+padding-left: 4px;
+padding-right: 4px;
+z-index: 200;
+}
+
+.cart_info a:before{
+padding-right: 3px;
+content: url(img/cart.gif);
+vertical-align: middle;
+}
+
+.addReport{
+display: none;
+position: absolute;
+left: -12px;
+color: #ff0000;
+font-size: 15px;
+background: #ffffff;
+border: 1px solid #cccccc;
+padding: 4px;
+}
+
+.cart_info:hover .addReport, .cart_independ:hover .addReport, .empty_cart .addReport{
+display: block;
+text-indent: 12px;
+}
+
+#cPrTotalQuantity{
+margin: -4px;
+}
+/* КОНЕЦ Верхняя часть ("Шапка") */
+
+/* Подвал (нижняя часть сайта) */
+.footer {
+position: absolute;
+bottom: 0px;
+width: 100%;
+min-height: 100px;
+max-height: 180px;
+font-size: 14px;
+border-top-width: 2px;
+border-top-style: solid;
+overflow: auto;
+}
+
+.fooLeft {
+display: inline-block;
+padding: 15px;
+max-width: 70%;
+vertical-align: middle;
+}
+
+.fooRight {
+display: inline-block;
+padding: 15px;
+font-size: 12px;
+vertical-align: middle;
+}
+
+.footerText {
+max-height: 80px;
+margin-left: 22px;
+}
+
+.bottomMenu {
+margin: 0px;
+padding:0px;
+}
+
+.bottomMenu li {
+display: inline-block;
+margin: 4px;
+}
+/* КОНЕЦ Подвал (нижняя часть сайта) */
+
+.clear{
+display: block;
+clear: both;
+}
+
+.nowrap{
+white-space: nowrap;
+} /* запрет переноса строк */
+
+.imgst{
+vertical-align: middle;
+margin-right: 3px;
+} /* Центровка маленьких изображений слева от текста */
+
+/* Верхнее горизонтальное меню */
+.horizontal_menu{
+height: 40px;
+margin: 0px;
+padding: 4px 2px;
+font-size: 15px;
+overflow: hidden;
+}
+
+.horMenuButton{
+float: left;
+width: 26px;
+height: 26px;
+border: 1px solid transparent;
+border-radius: 4px;
+background: transparent;
+margin-top: 8px;
+margin-left: 2px;
+cursor: pointer;
+}
+
+.horMenuButton div{
+width: 20px;
+height: 3px;
+margin: 4px 3px 4px 3px;
+border-radius: 3px;
+}
+
+/* Кнопка открытия верхнего меню при наведении мышью */
+.horMenuButton:hover{
+border: 1px solid #888888;
+}
+
+.horizontal_menu li{
+display: inline-block;
+white-space: nowrap;
+margin: 10px 3px;
+}
+
+.horizontal_menu a{
+padding: 5px;
+text-decoration: none !important;
+border-width: 1px;
+border-style: solid;
+transition: 0.5s; /* задержка-анимация onmouseover и onmouseout */
+}
+
+.horizontal_menuOpened{
+height: auto;
+}
+
+/* форма выбора валюты */
+.frmSelCurrency{
+display: block;
+position: fixed;
+right: 0px;
+background: #ffffff;
+border: 1px solid #cccccc;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+cursor: pointer;
+}
+
+.frmSelCurrency select{
+display: none;
+max-width: 200px;
+margin: 0px;
+height: 24px;
+border: 0px;
+}
+
+.currencyButton{
+height: 24px;
+display: inline;
+margin: 2px;
+}
+
+.currencyButton img{
+margin: 2px;
+vertical-align: middle;
+}
+
+/* Основной контент */
+.content{
+overflow: auto;
+}
+
+/* Ссылка, открытая в данный момент */
+.openedLink{
+font-weight: bold;
+}
+
+/* Блок меню Новости: Каждая новость */
+.menu_news .mnuCycle {
+margin: 4px;
+padding-bottom: 5px;
+}
+
+.menu_news .mnuCycle img {
+max-width: 100%;
+}
+
+/* Заголовки блоков меню */
+.mnuHdr {
+height: 20px;
+padding: 4px 6px 4px 6px;
+}
+
+/* Оболочка для Вертикальные блоки меню */
+.sidebar {
+display: none;
+margin-top: 6px;
+margin-left: 4px;
+text-align: left;
+overflow: hidden;
+}
+
+.sidebarOpened {
+display: block;
+min-height: 60px;
+}
+
+/* Заголовки блоков меню */
+.sidebar .mnuHdr {
+border-top-left-radius: inherit;
+border-top-right-radius: inherit;
+cursor: pointer;
+}
+
+.sidebar li {
+margin: 4px;
+}
+
+.sidebar ul {
+margin-left: 14px;
+margin-right: 1px;
+margin-bottom: 3px;
+list-style-type: none;
+}
+
+.sidebar li img {
+vertical-align: middle;
+margin-right: 2px;
+}
+
+/* Первые div без потомков */
+.sidebar > div {
+display: inline-block;
+width: 200px;
+margin-bottom: 3px;
+border: 1px solid transparent;
+text-align: left;
+}
+
+.sidebar .mnuBody {
+display: none;
+position: absolute;
+z-index: 999;
+border-width: 1px;
+border-style: solid;
+padding: 3px;
+min-width: 192px;
+max-width: 240px;
+}
+
+.sidebar .mnuBodyOpened {
+display: block;
+}
+
+.sidebar > div:hover .mnuBody {
+display: block;
+z-index: 2000;
+}
+
+.menu_categories .mnuBody img {
+vertical-align: middle;
+}
+
+.menu_categories .mnuBody ul li ul {
+display: none;
+}
+
+.menu_categories .mnuBody ul li:hover ul {
+display: block;
+}
+
+/* скрываем чтобы убрать вертикальные отступы в IE6 */
+.lEmpt {
+display: none;
+}
+
+/* Спецпредложения, Новые товары: Заголовки */
+.menu_special_offers .mnuHdr,
+.menu_new_products .mnuHdr {
+padding: 0px;
+}
+/* Спецпредложения, Новые товары: Заголовки */
+.menu_special_offers .mnuHdr,
+.menu_new_products .mnuHdr {
+padding: 3px;
+border-top-left-radius: inherit;
+border-top-right-radius: inherit;
+}
+
+.menu_special_offers .mnuCycle, .menu_new_products .mnuCycle {
+display: inline-block;
+vertical-align: top;
+}
+
+.menu_special_offers .mnuBody, .menu_new_products .mnuBody {
+border: 0px;
+padding: 5px;
+}
+
+.mnuPrImg img {
+max-width: 100%;
+}
+/* КОНЕЦ Спецпредложения, Новые товары */
+
+.menu_login_form form{
+text-align: center;
+}
+
+/* полосатые таблицы в форме регистрации, корзине, и оформления заказа и т.д. */
+.coltbl{
+border-width: 1px;
+border-top-style: ridge;
+border-left-style: ridge;
+border-right-style: outset;
+border-bottom-style: outset;
+border-collapse: collapse;
+}
+
+.coltbl td{
+padding: 4px;
+padding-right: 8px;
+}
+
+/* заголовок таблицы */
+.htr,
+.htr2 {
+height: 20px;
+}
+
+/* Запрет background-image для ссылок в заголовках */
+.mnuHdr a,
+.htr a,
+.coltbl .htr a {
+background: none !important;
+}
+
+.htr td{
+vertical-align: top;
+}
+
+.htr2 {
+font-weight: normal !important; /* !important т.к. в tunable-default.css этот селектор в группе с другими и там есть выбор font-weight, к тому же он по умолчанию bold */
+}
+
+.cartTotal caption{
+text-align: left;
+font-weight: bold;
+}
+
+/* таблица внутри нижней части корзины */
+.cartTotal td{
+border-bottom: solid 1px #000000;
+}
+
+.cart_independ body{
+min-width: 1%;
+}
+
+.alignCenter{
+text-align: center;
+}
+
+.alignRight{
+text-align: right;
+}
+
+.login_form, .forgot_password_form, .forgot_password_confirm{
+text-align: center;
+}
+
+.login_form table, .forgot_password_form table, .forgot_password_confirm table{
+margin: 0 auto;
+text-align: center;
+}
+
+.msg{
+padding: 5px;
+margin-top: 8px;
+margin-bottom: 8px;
+border-radius: 10px;
+}
+
+.msgHdr{
+font-size: 17px;
+font-weight: bold;
+}
+
+.authText{
+width: 100px;
+}
+
+.main_categories{
+text-align: center;
+}
+
+.mainCatCell{
+width: 290px;
+display: inline-block;
+text-align: left;
+margin-left: 2px;
+margin-right: 2px;
+margin-top: 6px;
+margin-bottom: 6px;
+padding: 5px;
+vertical-align: top;
+}
+
+.mainCatCell img{
+vertical-align: middle;
+margin-right: 3px;
+}
+
+.mcRoot{
+font-size: 17px;
+font-weight: bold;
+}
+
+.mcSub{
+font-size: 13px;
+}
+
+.catProducts, .mainProducts, .mnfProducts, .searchProducts{
+clear: both;
+text-align: center;
+}
+
+.lstProduct{
+display: inline-block;
+vertical-align: top;
+}
+
+.prSmallImg img{
+max-width: 100%;
+}
+
+.pages_links{
+margin-top: 5px;
+padding: 5px;
+font-size: 14px;
+line-height: 200%;
+clear: both;
+}
+
+.pages_links a{
+padding-left: 3px;
+padding-right: 3px;
+border-style: solid;
+border-width: 1px;
+}
+
+.pages_links a:hover{
+opacity: 0.6;
+}
+
+.PglPrev, .PglNext{
+background-color: transparent !important;
+border: 0px !important;
+}
+
+.PglPrev:before{
+content: '\2190';
+margin-right: 3px;
+}
+
+.PglNext:after{
+content: '\2192';
+margin-left: 3px;
+}
+
+.catChainLnk, .prDtChainLnk{
+font-size: 15px;
+font-weight: bold;
+}
+
+.subcategories{
+text-align: center;
+}
+
+.SubcatTitle{
+font-size: 14px;
+}
+
+.SubCats {
+width: 180px;
+display: inline-block;
+text-align: left;
+padding: 1px;
+vertical-align: top;
+}
+
+.category_image {
+float: right;
+margin: 3px;
+}
+
+.frmSort {
+overflow: auto;
+}
+
+.mnfRowImg {
+float: right;
+margin-left: 5px;
+margin-bottom: 3px;
+}
+
+.mnfRowSep {
+margin-top: 14px;
+margin-bottom: 14px;
+padding-bottom: 14px;
+clear: both;
+}
+
+.mnfImg {
+float: right;
+margin-left: 5px;
+margin-bottom: 3px;
+}
+
+.newsSep{
+margin-bottom: 22px;
+}
+
+.moreAllNews{
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.frmOrderLogin table{
+text-align: center;
+}
+
+.selPayMethod{
+margin-bottom: 10px;
+}
+
+.order_step2{
+max-width: 550px;
+}
+
+.protectImg{
+vertical-align: middle;
+margin-left: 3px;
+}
+
+.allContentList li{
+margin-bottom: 9px;
+list-style-image: url(img/ls.png);
+}
+
+.prDtMainInfo, .frmPrDetail{
+display: inline-block;
+vertical-align: top;
+margin-right: 8px;
+}
+
+.prDtImg{
+overflow: auto;
+display: inline-block;
+max-width: 100%;
+}
+
+.prDtImg img{
+max-width: 100%;
+}
+
+.product_gallery {
+vertical-align: top;
+}
+
+.prGalImg {
+display: inline;
+max-width: 100%;
+/*max-height: 104px;*/
+vertical-align: top;
+}
+
+.similar_products h3 {
+margin-left: 8px;
+margin-bottom: 8px;
+}
+
+.similarProduct {
+display: inline-block;
+vertical-align: top;
+}
+
+.similarProduct img{
+max-width: 100%;
+}
+
+.mnfName h1 {
+display: inline;
+margin-right: 12px;
+}
+
+.product_comments{
+margin-top: 12px;
+}
+
+.admin_reply{
+margin-left: 50px;
+}
+
+.admin_reply .pComHdr{
+font-style: italic;
+}
+
+.cpdate{
+float: right;
+}
+
+
+#pmdiv{
+margin-top: 12px;
+}
+
+.your_orders{
+margin: 12px 0px 12px 0px;
+}
+
+.frmChangeProfile{
+max-width: 550px;
+}
+
+.submitBl, .only_cart{
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.optLabel{
+cursor: pointer;
+text-decoration: underline;
+}
+
+.register .coltbl,
+.order_step2 .coltbl,
+.profile .coltbl,
+.discounts .coltbl,
+.group_discounts .coltbl,
+.change_password {
+width: 310px;
+}
+
+/* Вкладки на странице товара */
+#prodTabDescript{
+display: block;
+}
+
+#prodTabGallery, #prodTabComments{
+display: none;
+}
+
+#prodTabs{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#prodTabs span{
+border-left:  1px solid #cccccc;
+cursor: pointer;
+}
+
+#TabDescript, #TabGallery, #TabComments{
+display: inline-block;
+white-space: nowrap;
+}
+
+.activeTab{
+font-weight: bold !important;
+font-style: oblique !important;
+font-size: smaller;
+opacity: 0.7;
+}
+
+.noActiveTab{
+/* в tunable-default.css */
+}
+
+/* конец Вкладки на странице товара */
+
+
+/* Если ширина окна больше заданного значения */
+@media screen and (min-width: 1000px) {
+
+ .horMenuButton {
+ display: none;
+ }
+
+ .central {
+ display: block;
+ margin-left: 254px;
+ }
+
+ .sidebar {
+ display: block;
+ float: left;
+ width: 250px;
+ height: auto;
+ margin-left: 4px;
+ margin-bottom: 200px; /* чтобы не залез в футер */
+ vertical-align: top;
+ text-align: left;
+ }
+
+ /* Первые div без потомков */
+ .sidebar > div {
+ margin-bottom: 12px;
+ padding-bottom: 10px;
+ width: 248px;
+ /*border: 1px solid #cccccc;*/
+ }
+
+ .sidebar .menu_manufacturers {
+ padding-bottom: 0px;
+ }
+
+ .sidebar .menu_manufacturers:hover {
+ padding-bottom: 10px;
+ }
+
+ .sidebar .mnuHdr {
+ cursor: auto;
+ }
+
+ .sidebar .mnuBody {
+ display: block;
+ position: static;
+ border: 1px solid transparent !important;
+ }
+
+ /* Стрелка вверх-вниз в заголовке меню произодителей */
+ .menu_manufacturers .mnuHdr:after {
+ margin-left: 8px;
+ content: '\2195';
+ font-size: 12px;
+ }
+
+ .menu_manufacturers .mnuBody {
+ display: none;
+ }
+
+ .fooRight {
+ float: right;
+ }
+
+}
+
+/* Если ширина окна меньше заданного значения */
+@media screen and (max-width: 840px) {
+
+ .hdrRight {
+ font-size: 20px;
+ }
+
+ .footer {
+ font-size: 12px;
+ }
+
+ .fooRight {
+ font-size: 11px;
+ }
+
+}
+
+/* Если ширина окна меньше заданного значения */
+@media screen and (max-width: 640px) {
+
+ .header {
+ text-align: center;
+ }
+
+ .hdrLeft {
+ display: inline-block;
+ float: none;
+ text-align: left;
+ }
+
+ .hdrRight {
+ display: inline-block;
+ margin-left: 0px;
+ width: 100%;
+ }
+
+ .logo {
+ font-size: 17px;
+ }
+
+ .horizontal_menu li {
+ font-size: 14px;
+ margin: 10px 2px;
+ }
+
+ .central {
+ padding-bottom: 220px;
+ }
+
+ .coltbl input[type='text'],
+ .coltbl input[type='email'],
+ .coltbl input[type='password'],
+ .coltbl textarea,
+ .coltbl select,
+ .orderComment textarea,
+ .frmAddComment textarea {
+ width: 100%;
+ max-width: 300px;
+ }
+
+ .footer {
+ font-size: 11px;
+ }
+
+ .fooRight {
+ font-size: 10px;
+ }
+
+}
+
+/****************** Прайс-лист НАЧАЛО ******************/
+/* Прайс-лист: тело страницы */
+.priceList body {
+background-image: none;
+}
+
+/* Шапка прайс-листа */
+.priceHeader {
+padding: 10px;
+}
+
+/* Пункт в верхнем меню прайс-листа */
+.priceHdrMenuItem {
+display: inline-block;
+margin: 6px;
+}
+
+/* Заголовки таблицы */
+.priceTbl .htr {
+white-space: nowrap;
+}
+
+/* Ссылки в заголовке таблицы */
+.priceTbl .htr a:link {
+text-decoration: underline;
+}
+
+/* Подвал прайс-листа */
+.priceFooter {
+padding: 16px;
+text-align: left;
+}
+
+/* Правила для печати прайс-листа */
+@media print {
+
+/* Скрыть верхнюю и нижнюю часть */
+ .priceMenu,
+ .priceFooter {
+ display: none;
+ }
+
+/* Убрать фоновое изображение */
+ .priceContent {
+ background-image: none;
+ }
+
+/* Убрать подчеркивание ссылок */
+ .priceContent a {
+ text-decoration: none;
+ }
+
+}
+/* КОНЕЦ Правила для печати прайс-листа */
+/****************** Прайс-лист КОНЕЦ ******************/

@@ -1,0 +1,15 @@
+
+go_to_payment = Перейти к оплате
+after_submit = После нажатия кнопки, Вы будете перемещены на сайт ROBOKASSA для оплаты заказа.
+order_n = Zakaz N
+paid_successfully = Заказ оплачен успешно
+paid_sum = Оплаченная сумма
+order_status = Статус заказа
+is_paid = Оплачен
+final_total = Итого к оплате
+continue = Продолжить
+payment_not_made = Оплата через ROBOKASSA не произведена
+payment_errors = Возникли следующие ошибки при обработке платежа
+thank_you = Спасибо за покупку
+order_number = Номер заказа
+order_is_sended = Ваш заказ отправлен на обработку

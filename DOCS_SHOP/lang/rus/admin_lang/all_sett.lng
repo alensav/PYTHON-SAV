@@ -1,0 +1,24 @@
+
+basic_config = Основная конфигурация
+admin_config = Конфигурация администрирования
+changepass = Логин и пароль администратора
+description = Описание
+value = Значение
+pay_methods = Способы оплаты
+mainpage_conf = Текст главной страницы
+disabled_currency_cant_def = Валюты магазина
+currencies = Валюты магазина
+delivery_methods = Способы доставки
+order_fields = Форма заказа и регистрации
+agreement = Соглашение между продавцом и покупателем
+horizontal_menu = Горизонтальное меню
+vertical_menu = Блок меню &quot;Информация&quot;
+smtp_settings = Настройки SMTP
+payment_blanks = Платежные бланки
+order_statuses = Статусы заказов
+additional_fields = Дополнительные поля
+reg_order_feedback = (в форме заказа и обр. связи)
+vertical_blocks = Блоки меню
+product_comments = Отзывы о товарах
+cache = Кэширование
+tune_styles = Оформление дизайна

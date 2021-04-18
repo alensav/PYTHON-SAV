@@ -1,0 +1,39 @@
+/* Ётот файл используетс€ в общедоступной части и в панели администрировани€ */
+
+.helpContext{
+display: inline;
+}
+
+.helpContext img{
+width: 14px;
+height: 14px;
+vertical-align: middle;
+cursor: help;
+}
+
+.helpContext div{
+position: absolute;
+margin-top: 12px;
+margin-left: -8px;
+display: none;
+max-width: 40%;
+background: #ffffff;
+padding: 4px;
+border: 1px outset #b9c2d9;
+z-index: 999;
+text-align: left;
+font-size: 13px;
+font-weight: normal;
+white-space: normal;
+}
+
+.helpContext:hover div{
+display: inline-block;
+}
+
+/* ≈сли ширина окна меньше заданного значени€ */
+@media screen and (max-width: 500px){
+ .helpContext div{
+ left: 10px;
+ }
+}
