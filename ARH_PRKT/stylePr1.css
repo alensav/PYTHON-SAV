@@ -143,6 +143,24 @@ body {
     /* прокрутка по вертикали */
 }
 
+.dv3-1-1 {
+    border: 1px solid rgb(19, 19, 18);
+    left: 0px;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    background-color: #ceeeb9;
+    position: absolute;
+    z-index: 46;
+    /*font-size: 14;*/
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
+}
+
 .dv3-1 {
     border: 1px solid rgb(19, 19, 18);
     left: 0px;
