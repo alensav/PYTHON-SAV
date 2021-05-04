@@ -146,18 +146,18 @@ body {
 .dv3-1-1 {
     border: 1px solid rgb(19, 19, 18);
     left: 0px;
-    top: 0px;
+    bottom: 0%;
     height: 80px;
     width: 100%;
-    background-color: #ceeeb9;
-    position: absolute;
+    background-color: #f1d1d1;
+    position: relative;
     z-index: 46;
     /*font-size: 14;*/
-    display: inline-block;
+    /*display: inline-block;*/
     overflow: hidden;
-    overflow-x: scroll;
+    /*overflow-x: scroll;
     /* прокрутка по горизонтали */
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
     /* прокрутка по вертикали */
 }
 
@@ -263,7 +263,29 @@ body {
     float: left;
     height: 100%;
     width: 35%;
+    /* ФОН img*/
     background: linear-gradient(90deg, #FFFD00, #0691F9);
+    position: relative;
+    z-index: 7;
+    font-size: 14;
+    /*display: inline-block;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    /* прокрутка по горизонтали */
+    overflow-y: scroll;
+    /* прокрутка по вертикали */
+}
+
+.dv4-1 {
+    border: 1px solid rgb(19, 19, 18);
+    top: 0px;
+    left: 30%;
+    float: left;
+    height: 100%;
+    width: 35%;
+    /* ФОН img*/
+    background: no-repeat center/180% url(DOM4.jpg);
+    /*background: linear-gradient(90deg, #FFFD00, #0691F9);*/
     position: relative;
     z-index: 7;
     font-size: 14;
@@ -578,6 +600,19 @@ html {
 }
 
 
+/*Для баннера
+
+.icon-bar2 {
+    position: fixed;
+    top: 80%;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%) translateX(200%);
+    z-index: 50; 
+}
+*/
+
+
 /* Style the icon bar links */
 
 .icon-bar a {
@@ -588,6 +623,19 @@ html {
     color: white;
     font-size: 20px;
 }
+
+
+/*Для баннера
+
+.icon-bar2 a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+*/
 
 
 /* Style the social media icons with color, if you want */
