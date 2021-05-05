@@ -10,8 +10,31 @@ p {
     text-indent: 25px;
 }
 
+div.dv3_2-1 p,
+br {
+    text-align: left;
+}
+
 body {
     background-color: #d2f1b8;
+}
+
+
+/*Колонки*/
+
+div.dv3_2-1 {
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
 }
 
 .button {
@@ -107,7 +130,7 @@ body {
     border: 1px solid rgb(19, 19, 18);
     height: 90%;
     width: 100%;
-    background: linear-gradient(135deg, rgb(237, 238, 176), rgb(176, 192, 235));
+    background: linear-gradient(135deg, rgb(231, 231, 193), rgba(241, 221, 33, 0.473));
     position: relative;
     z-index: 5;
     margin: 0px auto;
