@@ -1,0 +1,57 @@
+User-agent: Yandex
+
+# Наиболее часто встречаемые расширения документов
+Allow: /*.pdf
+Allow: /*.xls
+Allow: /*.doc
+Allow: /*.ppt
+Allow; /*.txt
+# Требуется для правильно обработки ПС
+Allow: /*/arhiv-proekt.ru/*.css
+Allow: /*/arhiv-proekt.ru/*.js
+# Картинки
+Allow: /*/arhiv-proekt.ru/*.jpg
+Allow: /*/arhiv-proekt.ru/*.jpeg
+Allow: /*/arhiv-proekt.ru/*.png
+Allow: /*/arhiv-proekt.ru/*.gif
+# Наиболее часто встречаемые метки для отслеживания рекламы
+Clean-param: utm_source&utm_medium&utm_term&utm_content&utm_campaign&yclid&gclid&_openstat&from /
+# При наличии фильтров и параметров добавляем и их в Clean-param
+
+User-agent: Googlebot
+
+
+Allow: /*.pdf
+Allow: /*.xls
+Allow: /*.doc
+Allow: /*.ppt
+Allow: /*.txt
+Allow: /*/arhiv-proekt.ru/*.css
+Allow: /*/arhiv-proekt.ru/*.js
+Allow: /*/arhiv-proekt.ru/*.jpg
+Allow: /*/arhiv-proekt.ru/*.jpeg
+Allow: /*/arhiv-proekt.ru/*.png
+Allow: /*/arhiv-proekt.ru/*.gif
+# У google метки, фильтры и параметры закрываются в GSC-Сканирование-Параметры URL
+
+User-agent: *
+
+
+# Метки, фильтры и параметры для других ПС закрываем по классическому стандарту
+Allow: /*utm
+Allow: /*clid=
+Allow; /*openstat
+Allow: /*from
+Allow: /*.pdf
+Allow: /*.xls
+Allow: /*.doc
+Allow: /*.ppt
+Allow: /*.txt
+Allow: /*/arhiv-proekt.ru/*.css
+Allow: /*/arhiv-proekt.ru/*.js
+Allow: /*/arhiv-proekt.ru/*.jpg
+Allow: /*/arhiv-proekt.ru/*.jpeg
+Allow: /*/arhiv-proekt.ru/*.png
+Allow: /*/arhiv-proekt.ru/*.gif
+
+Sitemap: http://www.arhiv-proekt.ru/sitemap.xml
