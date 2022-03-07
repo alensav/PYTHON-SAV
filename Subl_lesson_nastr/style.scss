@@ -1,0 +1,30 @@
+$Col_red:red;
+$Bl:blue;
+$cc:black;
+
+.div_s0 {
+	display: flex;
+}
+
+.div_s1 {
+	background: $Col_red;
+	height: 200px;
+	width: 400px;
+}
+.div_s2 {
+	background: $Bl;
+	height: 200px;
+	width: 400px;
+}
+.div_s3 {
+	background: $cc;
+	height: 200px;
+	width: 400px;
+}
+div {
+	font-size: 30px;
+	color: white;
+		line-height: 200px;
+		text-align: center;
+		margin: 10px;
+}

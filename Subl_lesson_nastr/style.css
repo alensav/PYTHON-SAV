@@ -1,0 +1,26 @@
+.div_s0 {
+  display: flex; }
+
+.div_s1 {
+  background: red;
+  height: 200px;
+  width: 400px; }
+
+.div_s2 {
+  background: blue;
+  height: 200px;
+  width: 400px; }
+
+.div_s3 {
+  background: black;
+  height: 200px;
+  width: 400px; }
+
+div {
+  font-size: 30px;
+  color: white;
+  line-height: 200px;
+  text-align: center;
+  margin: 10px; }
+
+/*# sourceMappingURL=style.css.map */

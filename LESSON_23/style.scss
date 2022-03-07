@@ -1,0 +1,17 @@
+.box2 {
+	background: #94A2FFFF;
+	height: 150px;
+	width: 33.3%;
+	margin: 10px;
+	order: 2;
+	flex-grow: 2;
+	color: white;
+	line-height: 150px;
+	text-align: center;
+	font-size:40px;
+}
+.w3-container {
+	display: flex;
+	justify-content: around;
+}
+
